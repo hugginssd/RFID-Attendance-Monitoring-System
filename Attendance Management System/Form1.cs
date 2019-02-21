@@ -19,8 +19,6 @@ namespace Attendance_Management_System
             //this.FormBorderStyle = FormBorderStyle.FixedSingle;
            // this.Size = new Size(1300, 600);
         }
-        public Button btnNewStudent = new Button();
-
         private void lblMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -37,6 +35,7 @@ namespace Attendance_Management_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            btnNewStudent.Visible = false;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -63,14 +62,7 @@ namespace Attendance_Management_System
 
         private void btnStudentDetails_Click(object sender, EventArgs e)
         {
-            //btnNewStudent.Text = "New Student";
-            //btnNewStudent.Location = new Point(10, 195);
-            //btnNewStudent.Size = new Size(100, 40);
-            //btnNewStudent.Show();
-            //btnNoticeBoard.Visible = false;
-            //btnSystemUsers.Visible = false;
-            //btnSettings.Visible = false;
-            //btnExit.Visible = false;
+            btnNewStudent.Visible = true;
             pnlSidePanel.Location = new Point(0, 228);
             pnlSidePanel.Size = new Size(7, btnStudentDetails.Height);
         }

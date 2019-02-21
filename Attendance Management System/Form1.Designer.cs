@@ -30,37 +30,38 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnNewStudent = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlSidePanel = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblSignOut = new System.Windows.Forms.Label();
             this.lblUserRole = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSystemUsers = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnNoticeBoard = new System.Windows.Forms.Button();
+            this.btnAdministration = new System.Windows.Forms.Button();
             this.btnStudentDetails = new System.Windows.Forms.Button();
             this.btnAttendance = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblMaximize = new System.Windows.Forms.Label();
             this.lblMinimize = new System.Windows.Forms.Label();
             this.lblClose = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.userStudentDetails1 = new Attendance_Management_System.userStudentDetails();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAdministration = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,6 +77,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
+            this.panel5.Controls.Add(this.btnNewStudent);
             this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Controls.Add(this.pnlSidePanel);
             this.panel5.Controls.Add(this.btnExit);
@@ -92,6 +94,29 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 520);
             this.panel5.TabIndex = 4;
+            // 
+            // btnNewStudent
+            // 
+            this.btnNewStudent.FlatAppearance.BorderSize = 0;
+            this.btnNewStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewStudent.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewStudent.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnNewStudent.Location = new System.Drawing.Point(63, 226);
+            this.btnNewStudent.Name = "btnNewStudent";
+            this.btnNewStudent.Size = new System.Drawing.Size(138, 38);
+            this.btnNewStudent.TabIndex = 9;
+            this.btnNewStudent.Text = "New Student";
+            this.btnNewStudent.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Attendance_Management_System.Properties.Resources.bottom_bar;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 500);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(200, 22);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // pnlSidePanel
             // 
@@ -169,6 +194,17 @@
             this.lblUserRole.TabIndex = 1;
             this.lblUserRole.Text = "ADMINISTRATOR";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::Attendance_Management_System.Properties.Resources.Female_Profile_50px;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 69);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnSystemUsers
             // 
             this.btnSystemUsers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -220,6 +256,24 @@
             this.btnNoticeBoard.UseVisualStyleBackColor = false;
             this.btnNoticeBoard.Click += new System.EventHandler(this.btnNoticeBoard_Click);
             // 
+            // btnAdministration
+            // 
+            this.btnAdministration.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdministration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
+            this.btnAdministration.FlatAppearance.BorderSize = 0;
+            this.btnAdministration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdministration.Font = new System.Drawing.Font("Humanst521 BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministration.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAdministration.Location = new System.Drawing.Point(0, 122);
+            this.btnAdministration.Name = "btnAdministration";
+            this.btnAdministration.Size = new System.Drawing.Size(200, 50);
+            this.btnAdministration.TabIndex = 1;
+            this.btnAdministration.Text = "ADMINISTRATION";
+            this.btnAdministration.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAdministration.UseVisualStyleBackColor = false;
+            this.btnAdministration.Click += new System.EventHandler(this.btnAdministration_Click);
+            // 
             // btnStudentDetails
             // 
             this.btnStudentDetails.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -263,6 +317,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 42);
             this.panel3.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::Attendance_Management_System.Properties.Resources.swift_logo1;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(200, 42);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // panel2
             // 
@@ -334,56 +399,6 @@
             this.userStudentDetails1.Size = new System.Drawing.Size(820, 520);
             this.userStudentDetails1.TabIndex = 0;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Attendance_Management_System.Properties.Resources.bottom_bar;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 500);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 22);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::Attendance_Management_System.Properties.Resources.Female_Profile_50px;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnAdministration
-            // 
-            this.btnAdministration.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdministration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
-            this.btnAdministration.FlatAppearance.BorderSize = 0;
-            this.btnAdministration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdministration.Font = new System.Drawing.Font("Humanst521 BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdministration.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAdministration.Location = new System.Drawing.Point(0, 122);
-            this.btnAdministration.Name = "btnAdministration";
-            this.btnAdministration.Size = new System.Drawing.Size(200, 50);
-            this.btnAdministration.TabIndex = 1;
-            this.btnAdministration.Text = "ADMINISTRATION";
-            this.btnAdministration.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAdministration.UseVisualStyleBackColor = false;
-            this.btnAdministration.Click += new System.EventHandler(this.btnAdministration_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::Attendance_Management_System.Properties.Resources.swift_logo1;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(200, 42);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -400,15 +415,15 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -439,6 +454,7 @@
         private userStudentDetails userStudentDetails1;
         private System.Windows.Forms.Panel pnlSidePanel;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnNewStudent;
     }
 }
 
