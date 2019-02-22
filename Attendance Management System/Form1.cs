@@ -15,9 +15,16 @@ namespace Attendance_Management_System
         public Form1()
         {
             InitializeComponent();
-           
+
             //this.FormBorderStyle = FormBorderStyle.FixedSingle;
-           // this.Size = new Size(1300, 600);
+            lblClose.Visible = false;
+            lblMaximize.Visible = false;
+           this.Size = new Size(1300, 563);
+        }
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+           // Search_Text.AddIcon(txtSearch, Properties.Resources.search);
         }
         private void lblMinimize_Click(object sender, EventArgs e)
         {
@@ -104,9 +111,15 @@ namespace Attendance_Management_System
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+           
             pnlSidePanel.BackColor = Color.Wheat;
             pnlSidePanel.Location = new Point(0,443);
             pnlSidePanel.Size = new Size(7,btnExit.Height);
+            if (MessageBox.Show("Do you want o exit the system?\nSave all your information before its lost. Unsaved work will be lost", "Quit", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+
+                Application.Exit();
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

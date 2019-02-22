@@ -28,17 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnNewStudent = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlSidePanel = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblSignOut = new System.Windows.Forms.Label();
             this.lblUserRole = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSystemUsers = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnNoticeBoard = new System.Windows.Forms.Button();
@@ -46,22 +45,29 @@
             this.btnStudentDetails = new System.Windows.Forms.Button();
             this.btnAttendance = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblMaximize = new System.Windows.Forms.Label();
             this.lblMinimize = new System.Windows.Forms.Label();
             this.lblClose = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.hintTextBox1 = new Windows.Forms.HintTextBox(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnProfile = new System.Windows.Forms.Button();
+            this.btnCnrSignOut = new System.Windows.Forms.Button();
             this.userStudentDetails1 = new Attendance_Management_System.userStudentDetails();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -107,16 +113,6 @@
             this.btnNewStudent.TabIndex = 9;
             this.btnNewStudent.Text = "New Student";
             this.btnNewStudent.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Attendance_Management_System.Properties.Resources.bottom_bar;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 500);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 22);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // pnlSidePanel
             // 
@@ -193,17 +189,6 @@
             this.lblUserRole.Size = new System.Drawing.Size(103, 15);
             this.lblUserRole.TabIndex = 1;
             this.lblUserRole.Text = "ADMINISTRATOR";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::Attendance_Management_System.Properties.Resources.Female_Profile_50px;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnSystemUsers
             // 
@@ -318,20 +303,13 @@
             this.panel3.Size = new System.Drawing.Size(200, 42);
             this.panel3.TabIndex = 2;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::Attendance_Management_System.Properties.Resources.swift_logo1;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(200, 42);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(185)))), ((int)(((byte)(247)))));
+            this.panel2.Controls.Add(this.btnCnrSignOut);
+            this.panel2.Controls.Add(this.btnProfile);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.hintTextBox1);
             this.panel2.Controls.Add(this.lblMaximize);
             this.panel2.Controls.Add(this.lblMinimize);
             this.panel2.Controls.Add(this.lblClose);
@@ -348,7 +326,7 @@
             this.lblMaximize.AutoSize = true;
             this.lblMaximize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaximize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMaximize.Location = new System.Drawing.Point(782, 1);
+            this.lblMaximize.Location = new System.Drawing.Point(623, 0);
             this.lblMaximize.Name = "lblMaximize";
             this.lblMaximize.Size = new System.Drawing.Size(12, 16);
             this.lblMaximize.TabIndex = 2;
@@ -361,7 +339,7 @@
             this.lblMinimize.AutoSize = true;
             this.lblMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMinimize.Location = new System.Drawing.Point(747, 0);
+            this.lblMinimize.Location = new System.Drawing.Point(793, -5);
             this.lblMinimize.Name = "lblMinimize";
             this.lblMinimize.Size = new System.Drawing.Size(24, 16);
             this.lblMinimize.TabIndex = 1;
@@ -374,7 +352,7 @@
             this.lblClose.AutoSize = true;
             this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblClose.Location = new System.Drawing.Point(800, 0);
+            this.lblClose.Location = new System.Drawing.Point(641, 0);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(17, 16);
             this.lblClose.TabIndex = 0;
@@ -390,6 +368,93 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(820, 520);
             this.panel6.TabIndex = 2;
+            // 
+            // hintTextBox1
+            // 
+            this.hintTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(185)))), ((int)(((byte)(247)))));
+            this.hintTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.hintTextBox1.EnterToTab = false;
+            this.hintTextBox1.Font = new System.Drawing.Font("Humanst521 BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hintTextBox1.ForeColor = System.Drawing.Color.White;
+            this.hintTextBox1.HintColor = System.Drawing.Color.White;
+            this.hintTextBox1.HintValue = "Search";
+            this.hintTextBox1.Location = new System.Drawing.Point(21, 22);
+            this.hintTextBox1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.hintTextBox1.Name = "hintTextBox1";
+            this.hintTextBox1.Size = new System.Drawing.Size(344, 15);
+            this.hintTextBox1.TabIndex = 3;
+            this.hintTextBox1.TextForeColor = System.Drawing.Color.White;
+            this.hintTextBox1.Value = "";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Attendance_Management_System.Properties.Resources.bottom_bar;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 500);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(200, 22);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::Attendance_Management_System.Properties.Resources.Female_Profile_50px;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 69);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::Attendance_Management_System.Properties.Resources.swift_logo1;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(200, 42);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Attendance_Management_System.Properties.Resources.search;
+            this.pictureBox4.Location = new System.Drawing.Point(2, 21);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // btnProfile
+            // 
+            this.btnProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
+            this.btnProfile.FlatAppearance.BorderSize = 0;
+            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProfile.Font = new System.Drawing.Font("Humanst521 BT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnProfile.Location = new System.Drawing.Point(747, 18);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(71, 20);
+            this.btnProfile.TabIndex = 5;
+            this.btnProfile.Text = "PROFILE";
+            this.btnProfile.UseVisualStyleBackColor = false;
+            // 
+            // btnCnrSignOut
+            // 
+            this.btnCnrSignOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
+            this.btnCnrSignOut.FlatAppearance.BorderSize = 0;
+            this.btnCnrSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCnrSignOut.Font = new System.Drawing.Font("Humanst521 BT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCnrSignOut.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCnrSignOut.Location = new System.Drawing.Point(669, 18);
+            this.btnCnrSignOut.Name = "btnCnrSignOut";
+            this.btnCnrSignOut.Size = new System.Drawing.Size(75, 20);
+            this.btnCnrSignOut.TabIndex = 6;
+            this.btnCnrSignOut.Text = "SIGNOUT";
+            this.btnCnrSignOut.UseVisualStyleBackColor = false;
             // 
             // userStudentDetails1
             // 
@@ -415,15 +480,16 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -455,6 +521,10 @@
         private System.Windows.Forms.Panel pnlSidePanel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnNewStudent;
+        private Windows.Forms.HintTextBox hintTextBox1;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnProfile;
+        private System.Windows.Forms.Button btnCnrSignOut;
     }
 }
 

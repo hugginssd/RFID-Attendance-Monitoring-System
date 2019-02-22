@@ -68,6 +68,9 @@
     <Compile Include="Round Button.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Search Text.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="userDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +145,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Microsoft Admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
