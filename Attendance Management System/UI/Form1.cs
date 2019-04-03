@@ -19,8 +19,9 @@ namespace Attendance_Management_System
             //this.FormBorderStyle = FormBorderStyle.FixedSingle;
             lblClose.Visible = false;
             lblMaximize.Visible = false;
-           this.Size = new Size(1300, 563);
+           this.Size = new Size(1100, 563);
         }
+        int i = 1;
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
@@ -43,6 +44,9 @@ namespace Attendance_Management_System
         private void Form1_Load(object sender, EventArgs e)
         {
             btnNewStudent.Visible = false;
+            btnManageStudent.Visible = false;
+            btnNoticeBoard.Visible = true;
+            btnSystemUsers.Visible = true;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -68,10 +72,26 @@ namespace Attendance_Management_System
         }
 
         private void btnStudentDetails_Click(object sender, EventArgs e)
-        {
-            btnNewStudent.Visible = true;
+        {  
             pnlSidePanel.Location = new Point(0, 228);
             pnlSidePanel.Size = new Size(7, btnStudentDetails.Height);
+          
+            if ((i/2)==0)
+            {
+                btnNewStudent.Visible = true;
+                btnManageStudent.Visible = true;
+                btnNoticeBoard.Visible = false;
+                btnSystemUsers.Visible = false;
+                
+            }
+            else
+            {
+                btnNewStudent.Visible = false;
+                btnManageStudent.Visible = false;
+                btnNoticeBoard.Visible = true;
+                btnSystemUsers.Visible = true;
+            }
+          i = i + 1;
         }
 
         private void btnAdministration_Click(object sender, EventArgs e)
@@ -123,6 +143,21 @@ namespace Attendance_Management_System
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userStudentDetails1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNewStudent_Click(object sender, EventArgs e)
+        {
+            userNewStudentt.Visible = true;
+        }
+
+        private void btnManageStudent_Click(object sender, EventArgs e)
         {
 
         }
