@@ -133,6 +133,12 @@
     <Compile Include="UI\userStudentDetails.Designer.cs">
       <DependentUpon>userStudentDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\UserStudentMasterDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserStudentMasterDetails.Designer.cs">
+      <DependentUpon>UserStudentMasterDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\userSystemUsers.cs">
       <SubType>UserControl</SubType>
     </Compile>

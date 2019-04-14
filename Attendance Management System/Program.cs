@@ -11,6 +11,7 @@ namespace Attendance_Management_System
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// entry point for the programm
         [STAThread]
         static void Main()
         {
