@@ -176,6 +176,9 @@
     <EmbeddedResource Include="UI\userStudentDetails.resx">
       <DependentUpon>userStudentDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserStudentMasterDetails.resx">
+      <DependentUpon>UserStudentMasterDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\userSystemUsers.resx">
       <DependentUpon>userSystemUsers.cs</DependentUpon>
     </EmbeddedResource>
