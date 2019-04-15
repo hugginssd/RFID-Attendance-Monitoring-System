@@ -47,6 +47,7 @@ namespace Attendance_Management_System
             btnManageStudent.Visible = false;
             btnNoticeBoard.Visible = true;
             btnSystemUsers.Visible = true;
+            userDashboard.Visible = true;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -69,14 +70,15 @@ namespace Attendance_Management_System
             pnlSidePanel.BackColor = Color.Wheat;
             pnlSidePanel.Location = new Point(0, 69);
             pnlSidePanel.Size = new Size(7, btnDashboard.Height);
+            useDashboard.Visible = true;
         }
 
         private void btnStudentDetails_Click(object sender, EventArgs e)
         {  
             pnlSidePanel.Location = new Point(0, 228);
             pnlSidePanel.Size = new Size(7, btnStudentDetails.Height);
-          
-            if ((i/2)==0)
+           i = i + 1;
+            if ((i%2)==0)
             {
                 btnNewStudent.Visible = true;
                 btnManageStudent.Visible = true;
@@ -91,7 +93,7 @@ namespace Attendance_Management_System
                 btnNoticeBoard.Visible = true;
                 btnSystemUsers.Visible = true;
             }
-          i = i + 1;
+         
         }
 
         private void btnAdministration_Click(object sender, EventArgs e)
@@ -155,11 +157,16 @@ namespace Attendance_Management_System
         private void btnNewStudent_Click(object sender, EventArgs e)
         {
             userNewStudentt.Visible = true;
+            userNewStudentt.BringToFront();
+            userStudentDetailss.Visible = false;
         }
 
         private void btnManageStudent_Click(object sender, EventArgs e)
         {
-
+            userStudentDetailss.Visible = true;
+            userStudentDetailss.BringToFront();
+            userNewStudentt.Visible = false;
+            
         }
     }
 }

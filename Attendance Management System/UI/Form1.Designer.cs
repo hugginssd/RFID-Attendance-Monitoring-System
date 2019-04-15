@@ -425,6 +425,7 @@
             this.hintTextBox1.Name = "hintTextBox1";
             this.hintTextBox1.Size = new System.Drawing.Size(344, 15);
             this.hintTextBox1.TabIndex = 3;
+            this.hintTextBox1.Text = "Search";
             this.hintTextBox1.TextForeColor = System.Drawing.Color.White;
             this.hintTextBox1.Value = "";
             // 
@@ -481,7 +482,7 @@
             // 
             // userNewStudentt
             // 
-            this.userNewStudentt.Location = new System.Drawing.Point(0, -1);
+            this.userNewStudentt.Location = new System.Drawing.Point(1, -1);
             this.userNewStudentt.Name = "userNewStudentt";
             this.userNewStudentt.Size = new System.Drawing.Size(916, 537);
             this.userNewStudentt.TabIndex = 2;
