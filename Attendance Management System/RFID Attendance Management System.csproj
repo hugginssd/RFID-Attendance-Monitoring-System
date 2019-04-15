@@ -105,6 +105,12 @@
     <Compile Include="UI\Search Text.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UI\UserAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserAdmin.Designer.cs">
+      <DependentUpon>UserAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\userDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
