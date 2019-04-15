@@ -47,7 +47,8 @@ namespace Attendance_Management_System
             btnManageStudent.Visible = false;
             btnNoticeBoard.Visible = true;
             btnSystemUsers.Visible = true;
-            userDashboard.Visible = true;
+            useDashboard.Visible = true;
+            useDashboard.BringToFront();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -71,6 +72,7 @@ namespace Attendance_Management_System
             pnlSidePanel.Location = new Point(0, 69);
             pnlSidePanel.Size = new Size(7, btnDashboard.Height);
             useDashboard.Visible = true;
+            useDashboard.BringToFront();
         }
 
         private void btnStudentDetails_Click(object sender, EventArgs e)
