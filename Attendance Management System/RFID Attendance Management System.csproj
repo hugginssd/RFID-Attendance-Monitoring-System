@@ -111,6 +111,12 @@
     <Compile Include="UI\UserAdmin.Designer.cs">
       <DependentUpon>UserAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\UserAttendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserAttendance.Designer.cs">
+      <DependentUpon>UserAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\userDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -169,6 +175,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\UserAttendance.resx">
+      <DependentUpon>UserAttendance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\userDashboard.resx">
       <DependentUpon>userDashboard.cs</DependentUpon>
     </EmbeddedResource>

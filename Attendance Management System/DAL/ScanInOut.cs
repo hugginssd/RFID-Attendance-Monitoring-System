@@ -10,6 +10,7 @@ namespace Attendance_Management_System.DAL
 {
     class ScanInOut
     {
+        //class for managing scan-in- scan-out of students using the arduino sensor
         SerialPort serialPort = new SerialPort();
         public ScanInOut()
         {

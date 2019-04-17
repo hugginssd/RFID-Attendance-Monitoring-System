@@ -24,3 +24,4 @@ C:\Users\user\source\repos\Attendance Management System\Attendance Management Sy
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance Management System.exe
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance Management System.pdb
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.UI.UserStudentMasterDetails.resources
+C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\RFID Attendance Management System.csprojResolveAssemblyReference.cache
