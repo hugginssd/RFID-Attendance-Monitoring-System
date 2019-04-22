@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Data;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,39 @@ namespace Attendance_Management_System.UI
         public UserAttendance()
         {
             InitializeComponent();
+
+            serialPort1.BaudRate = 9600;
+            serialPort1.PortName = "COM1";
+            serialPort1.DataBits = 8;
+            serialPort1.Parity = Parity.None;
+            serialPort1.StopBits = StopBits.One;
+            serialPort1.Open();
+            serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort_DataReceived);
         }
+        private void serialPort_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
+        {
+            string line = serialPort1.ReadLine();
+            string spdata =  serialPort1.ReadExisting();
+            Console.WriteLine(spdata);
+        }
+
+        private delegate void LineReceivedEvent(string line);
+
+        private void LineReceived(string text, string line)
+        {
+            text = line + "In";
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (serialPort1.IsOpen) serialPort1.Close();
+        }
+
+        private void serialPort1_ErrorReceived(object sender, System.IO.Ports.SerialErrorReceivedEventArgs e)
+        {
+            serialPort1.Close();
+        }
+        
 
         private void BtnBulkActions_Click(object sender, EventArgs e)
         {
@@ -89,3 +122,40 @@ namespace Attendance_Management_System.UI
         }
     }
 }
+
+//using System;
+//using System.IO.Ports;
+
+//class PortDataReceived
+//{
+//    public static void Main()
+//    {
+//        SerialPort mySerialPort = new SerialPort("COM1");
+
+//        mySerialPort.BaudRate = 9600;
+//        mySerialPort.Parity = Parity.None;
+//        mySerialPort.StopBits = StopBits.One;
+//        mySerialPort.DataBits = 8;
+//        mySerialPort.Handshake = Handshake.None;
+//        mySerialPort.RtsEnable = true;
+
+//        mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+
+//        mySerialPort.Open();
+
+//        Console.WriteLine("Press any key to continue...");
+//        Console.WriteLine();
+//        Console.ReadKey();
+//        mySerialPort.Close();
+//    }
+
+//    private static void DataReceivedHandler(
+//        object sender,
+//        SerialDataReceivedEventArgs e)
+//    {
+//        SerialPort sp = (SerialPort)sender;
+//        string indata = sp.ReadExisting();
+//        Console.WriteLine("Data Received:");
+//        Console.Write(indata);
+//    }
+//}

@@ -22,7 +22,12 @@ namespace Attendance_Management_System.UI
 
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
+        private void BtnCreate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnReset_Click(object sender, EventArgs e)
         {
 
         }

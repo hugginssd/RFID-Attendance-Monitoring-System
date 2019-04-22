@@ -59,13 +59,15 @@
             this.lblClose = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.BtnAttendanceMonitoring = new System.Windows.Forms.Button();
-            this.userSystemUsers1 = new Attendance_Management_System.UI.userSystemUsers();
+            this.BtnNewSystemUsers = new System.Windows.Forms.Button();
+            this.BtnManageSystemUsers = new System.Windows.Forms.Button();
+            this.userStudentMasterDetails = new Attendance_Management_System.UI.UserStudentMasterDetails();
+            this.userManageSystemUsers = new Attendance_Management_System.UI.userManageSystemUsers();
+            this.userSystemUsers = new Attendance_Management_System.UI.userSystemUsers();
             this.userAttendance = new Attendance_Management_System.UI.UserAttendance();
             this.userNewStudentt = new Attendance_Management_System.UI.userNewStudent();
             this.userStudentDetailss = new Attendance_Management_System.userStudentDetails();
             this.useDashboard = new Attendance_Management_System.userDashboard();
-            this.BtnNewSystemUsers = new System.Windows.Forms.Button();
-            this.BtnManageSystemUsers = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -478,7 +480,9 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.panel6.Controls.Add(this.userSystemUsers1);
+            this.panel6.Controls.Add(this.userStudentMasterDetails);
+            this.panel6.Controls.Add(this.userManageSystemUsers);
+            this.panel6.Controls.Add(this.userSystemUsers);
             this.panel6.Controls.Add(this.userAttendance);
             this.panel6.Controls.Add(this.userNewStudentt);
             this.panel6.Controls.Add(this.userStudentDetailss);
@@ -503,12 +507,54 @@
             this.BtnAttendanceMonitoring.UseVisualStyleBackColor = true;
             this.BtnAttendanceMonitoring.Click += new System.EventHandler(this.BtnAttendanceMonitoring_Click);
             // 
-            // userSystemUsers1
+            // BtnNewSystemUsers
             // 
-            this.userSystemUsers1.Location = new System.Drawing.Point(0, 1);
-            this.userSystemUsers1.Name = "userSystemUsers1";
-            this.userSystemUsers1.Size = new System.Drawing.Size(1027, 517);
-            this.userSystemUsers1.TabIndex = 4;
+            this.BtnNewSystemUsers.FlatAppearance.BorderSize = 0;
+            this.BtnNewSystemUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNewSystemUsers.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNewSystemUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnNewSystemUsers.Location = new System.Drawing.Point(63, 387);
+            this.BtnNewSystemUsers.Name = "BtnNewSystemUsers";
+            this.BtnNewSystemUsers.Size = new System.Drawing.Size(138, 32);
+            this.BtnNewSystemUsers.TabIndex = 12;
+            this.BtnNewSystemUsers.Text = "New System Users";
+            this.BtnNewSystemUsers.UseVisualStyleBackColor = true;
+            this.BtnNewSystemUsers.Click += new System.EventHandler(this.BtnNewSystemUsers_Click);
+            // 
+            // BtnManageSystemUsers
+            // 
+            this.BtnManageSystemUsers.FlatAppearance.BorderSize = 0;
+            this.BtnManageSystemUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnManageSystemUsers.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManageSystemUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnManageSystemUsers.Location = new System.Drawing.Point(63, 422);
+            this.BtnManageSystemUsers.Name = "BtnManageSystemUsers";
+            this.BtnManageSystemUsers.Size = new System.Drawing.Size(138, 30);
+            this.BtnManageSystemUsers.TabIndex = 13;
+            this.BtnManageSystemUsers.Text = "Manage System Users";
+            this.BtnManageSystemUsers.UseVisualStyleBackColor = true;
+            this.BtnManageSystemUsers.Click += new System.EventHandler(this.BtnManageSystemUsers_Click);
+            // 
+            // userStudentMasterDetails
+            // 
+            this.userStudentMasterDetails.Location = new System.Drawing.Point(-3, -1);
+            this.userStudentMasterDetails.Name = "userStudentMasterDetails";
+            this.userStudentMasterDetails.Size = new System.Drawing.Size(901, 521);
+            this.userStudentMasterDetails.TabIndex = 6;
+            // 
+            // userManageSystemUsers
+            // 
+            this.userManageSystemUsers.Location = new System.Drawing.Point(0, 1);
+            this.userManageSystemUsers.Name = "userManageSystemUsers";
+            this.userManageSystemUsers.Size = new System.Drawing.Size(900, 517);
+            this.userManageSystemUsers.TabIndex = 5;
+            // 
+            // userSystemUsers
+            // 
+            this.userSystemUsers.Location = new System.Drawing.Point(0, 1);
+            this.userSystemUsers.Name = "userSystemUsers";
+            this.userSystemUsers.Size = new System.Drawing.Size(1027, 517);
+            this.userSystemUsers.TabIndex = 4;
             // 
             // userAttendance
             // 
@@ -538,32 +584,6 @@
             this.useDashboard.Name = "useDashboard";
             this.useDashboard.Size = new System.Drawing.Size(900, 520);
             this.useDashboard.TabIndex = 0;
-            // 
-            // BtnNewSystemUsers
-            // 
-            this.BtnNewSystemUsers.FlatAppearance.BorderSize = 0;
-            this.BtnNewSystemUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNewSystemUsers.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNewSystemUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnNewSystemUsers.Location = new System.Drawing.Point(63, 387);
-            this.BtnNewSystemUsers.Name = "BtnNewSystemUsers";
-            this.BtnNewSystemUsers.Size = new System.Drawing.Size(138, 32);
-            this.BtnNewSystemUsers.TabIndex = 12;
-            this.BtnNewSystemUsers.Text = "New System Users";
-            this.BtnNewSystemUsers.UseVisualStyleBackColor = true;
-            // 
-            // BtnManageSystemUsers
-            // 
-            this.BtnManageSystemUsers.FlatAppearance.BorderSize = 0;
-            this.BtnManageSystemUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnManageSystemUsers.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnManageSystemUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnManageSystemUsers.Location = new System.Drawing.Point(63, 422);
-            this.BtnManageSystemUsers.Name = "BtnManageSystemUsers";
-            this.BtnManageSystemUsers.Size = new System.Drawing.Size(138, 30);
-            this.BtnManageSystemUsers.TabIndex = 13;
-            this.BtnManageSystemUsers.Text = "Manage System Users";
-            this.BtnManageSystemUsers.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -634,9 +654,11 @@
         private UI.userNewStudent userNewStudentt;
         private System.Windows.Forms.Button BtnAttendanceMonitoring;
         private UI.UserAttendance userAttendance;
-        private UI.userSystemUsers userSystemUsers1;
+        private UI.userSystemUsers userSystemUsers;
         private System.Windows.Forms.Button BtnManageSystemUsers;
         private System.Windows.Forms.Button BtnNewSystemUsers;
+        private UI.userManageSystemUsers userManageSystemUsers;
+        private UI.UserStudentMasterDetails userStudentMasterDetails;
     }
 }
 

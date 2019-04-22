@@ -79,8 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\studentBLL.cs" />
+    <Compile Include="BLL\AttendanceBLL.cs" />
+    <Compile Include="BLL\StudentBLL.cs" />
     <Compile Include="BLL\userBLL.cs" />
+    <Compile Include="DAL\AttendanceDAL.cs" />
     <Compile Include="DAL\Functions.cs" />
     <Compile Include="DAL\ScanInOut.cs" />
     <Compile Include="DAL\studentDAL.cs" />

@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace Attendance_Management_System.BLL
 {
-    class studentBLL
+    class StudentBLL
     {
-        public int ID { get; set; }
-        public string StudentID { get; set; }
-        public string Name { get; set; }
-        public string Lastname { get; set; }
+        public int StudentID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public DateTime DOB { get; set; }
-        public string Class { get; set; }
-        public DateTime RegDate { get; set; }
+        public int ClassID { get; set; }
+        public  string Email { get; set; }
+        public byte Picture { get; set; }
+        public char Gender { get; set; }
+        public string Address { get; set; }
+        public string Address2 { get; set; }
+        public string CandidateNo { get; set; }
+        public int NoOfSubjects { get; set; }
+        public string SchoolAddress { get; set; }
     }
 }

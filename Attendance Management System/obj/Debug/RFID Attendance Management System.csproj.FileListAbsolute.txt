@@ -12,16 +12,17 @@ C:\Users\user\source\repos\Attendance Management System\Attendance Management Sy
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.Form1.resources
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.frmLogin.resources
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.Properties.Resources.resources
+C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.UI.UserAttendance.resources
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.userDashboard.resources
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.UI.userManageStudent.resources
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.UI.userManageSystemUsers.resources
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.UI.userNewStudent.resources
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.userStudentDetails.resources
+C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.UI.UserStudentMasterDetails.resources
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.UI.userSystemUsers.resources
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\RFID Attendance Management System.csproj.GenerateResource.cache
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\RFID Attendance Management System.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\RFID Attendance Management System.csproj.CopyComplete
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance Management System.exe
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance Management System.pdb
-C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.UI.UserStudentMasterDetails.resources
-C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.UI.UserAttendance.resources
+C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\RFID Attendance Management System.csprojResolveAssemblyReference.cache

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Configuration;
 using Attendance_Management_System.BLL;
 using System.Data;
+using System.Windows.Forms;
 
 namespace Attendance_Management_System.DAL
 {
@@ -16,7 +17,8 @@ namespace Attendance_Management_System.DAL
 
         public bool Insert(userBLL bll)
         {
-            bool success = false;
+            bool IsSuccess = false;
+            SqlConnection conn = new SqlConnection(connection);
             string sql = "INSERT INTO [dbo].[Users]" +
                                                "([Id]" +
                                                ",[Name]" +
@@ -35,32 +37,43 @@ namespace Attendance_Management_System.DAL
                                                ",@Active" +
                                                ",@Username" +
                                                ",@Password)";
-            SqlConnection conn = new SqlConnection(connection);
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("@Name", bll.Name);
-            cmd.Parameters.AddWithValue("@LastName", bll.LastName);
-            cmd.Parameters.AddWithValue("@Role", bll.Role);
-            cmd.Parameters.AddWithValue("@CreatedBy", bll.CreatedBy);
-            cmd.Parameters.AddWithValue("@Active", bll.Active);
-            cmd.Parameters.AddWithValue("@Username", bll.UserName);
-            cmd.Parameters.AddWithValue("@Password", bll.Password);
-            conn.Open();
-            int i = cmd.ExecuteNonQuery();
-            cmd.Dispose();
-            conn.Close();
-            if (i > 0)
+
+            try
             {
-                success = true;
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@Name", bll.Name);
+                cmd.Parameters.AddWithValue("@LastName", bll.LastName);
+                cmd.Parameters.AddWithValue("@Role", bll.Role);
+                cmd.Parameters.AddWithValue("@CreatedBy", bll.CreatedBy);
+                cmd.Parameters.AddWithValue("@Active", bll.Active);
+                cmd.Parameters.AddWithValue("@Username", bll.UserName);
+                cmd.Parameters.AddWithValue("@Password", bll.Password);
+                conn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    IsSuccess = true;
+                }
+                else
+                {
+                    IsSuccess = false;
+                }
             }
-            else
+            catch (Exception e)
             {
-                success = false;
+                MessageBox.Show(e.ToString(), "Data Access Error", MessageBoxButtons.OK, MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
             }
-            return success;
+            finally
+            {
+                conn.Close();
+            }
+            return IsSuccess;
         }
         public DataTable Select(string keywords)
         {
             DataTable dt = null;
+            SqlConnection conn = new SqlConnection(connection);
             string sql = "SELECT [Id]" +
                             ",[Name]" +
                             ",[LastName]" +
@@ -71,42 +84,67 @@ namespace Attendance_Management_System.DAL
                             ",[Password]" +
                             "FROM[dbo].[Users]" +
                             " WHERE [Name] LIKE '%" + keywords + "%' OR [LastName] LIKE '%" + keywords + "%'  OR [Username] LIKE '%" + keywords + "%'";
-            SqlConnection conn = new SqlConnection(connection);
-            SqlDataAdapter da;
-            conn.Open();
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            conn.Close();
+          
+            try
+            {
+                SqlDataAdapter da;
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                dt = new DataTable();
+                da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString(), "Data Access Error", MessageBoxButtons.OK, MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
+            }
+            finally
+            {
+                conn.Close();
+            }
 
             return dt;
 
         }
         public bool Delete(userBLL bll)
         {
-            bool success = false;
+            bool IsSuccess = false;
+            SqlConnection conn = new SqlConnection(connection);
             string sql = "DELETE FROM [dbo].[Users]" +
                                     "WHERE [Id]= @Id ";
-            SqlConnection conn = new SqlConnection(connection);
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("@Id", bll.ID);
-            conn.Open();
-            int i = cmd.ExecuteNonQuery();
-            conn.Close();
-            if (i > 0)
+
+            try
             {
-                success = true;
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@Id", bll.ID);
+                int i = cmd.ExecuteNonQuery();
+                conn.Close();
+                if (i > 0)
+                {
+                   IsSuccess = true;
+                }
+                else
+                {
+                   IsSuccess = false;
+                }
             }
-            else
+            catch (Exception e)
             {
-                success = false;
+                MessageBox.Show(e.ToString(), "Data Access Error", MessageBoxButtons.OK, MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
+            }
+            finally
+            {
+                conn.Close();
             }
 
-            return success;
+            return IsSuccess;
         }
         public bool Update(userBLL bll)
         {
-            bool success = false;
+            bool IsSuccess = false;
+            SqlConnection conn = new SqlConnection(connection);
             string sql = "UPDATE [dbo].[Users]" +
                                       "SET[Id] = @Id" +
                                       ",[Name] = @Name" +
@@ -117,28 +155,39 @@ namespace Attendance_Management_System.DAL
                                       ",[Username] = @Username" +
                                       ",[Password] = @Password" +
                                       " WHERE [Username] = @Username AND [Id] = @Id";
-            SqlConnection conn = new SqlConnection(connection);
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("@Username", bll.UserName);
-            cmd.Parameters.AddWithValue("@Id", bll.ID);
-
-            conn.Open();
-            int i = cmd.ExecuteNonQuery();
-            conn.Close();
-            if (i > 0)
+            
+            try
             {
-                success = true;
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@Username", bll.UserName);
+                cmd.Parameters.AddWithValue("@Id", bll.ID);
+                conn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    IsSuccess = true;
+                }
+                else
+                {
+                   IsSuccess = false;
+                }
             }
-            else
+            catch (Exception e)
             {
-                success = false;
+                MessageBox.Show(e.ToString(), "Data Access Error", MessageBoxButtons.OK, MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
+            }
+            finally
+            {
+                conn.Close();
             }
 
-            return success;
+            return IsSuccess;
         }
         public bool Search(userBLL bll)
         {
-            bool success = false;
+            bool IsSuccess = false;
+            SqlConnection conn = new SqlConnection(connection);
             string sql = "SELECT [Id]" +
                               ",[Name]" +
                               ",[LastName]" +
@@ -149,23 +198,36 @@ namespace Attendance_Management_System.DAL
                               ",[Password]" +
                               "FROM[dbo].[Users]" +
                               "WHERE [Username]=@Username AND [Password] =@Password";
-            SqlConnection conn = new SqlConnection(connection);
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            SqlDataReader dr = null;
-            cmd.Parameters.AddWithValue("@Username", bll.UserName);
-            cmd.Parameters.AddWithValue("@Password", bll.Password);
-            conn.Open();
-            dr = cmd.ExecuteReader();
-            if (dr.Read())
+            try
             {
-                success = true;
+                
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataReader dr = null;
+                cmd.Parameters.AddWithValue("@Username", bll.UserName);
+                cmd.Parameters.AddWithValue("@Password", bll.Password);
+                conn.Open();
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    IsSuccess = true;
+                }
+                else
+                {
+                    IsSuccess = false;
+                }
+
+                conn.Close();
             }
-            else
+            catch (Exception e)
             {
-                success = false;
+                MessageBox.Show(e.ToString(), "Data Access Error", MessageBoxButtons.OK, MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
             }
-            conn.Close();
-            return success;
+            finally
+            {
+                conn.Close();
+            }
+            return IsSuccess;
         }
     }
 }

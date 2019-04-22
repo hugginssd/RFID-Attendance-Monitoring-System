@@ -16,5 +16,17 @@ namespace Attendance_Management_System.UI
         {
             InitializeComponent();
         }
+
+        private void UserStudentMasterDetails_Load(object sender, EventArgs e)
+        {
+            lblDate.Text = DateTime.Now.ToLongTimeString();
+            timer1.Enabled = true;
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblDate.Text = DateTime.Now.ToLongTimeString();
+        }
     }
 }

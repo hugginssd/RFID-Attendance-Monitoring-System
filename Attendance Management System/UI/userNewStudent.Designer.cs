@@ -85,7 +85,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 273F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 281F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.tableLayoutPanel1.Controls.Add(this.hintTextBox2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.hintTextBox1, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.hintTextBox3, 1, 3);
@@ -144,7 +144,7 @@
             this.hintTextBox2.HintValue = "ID";
             this.hintTextBox2.Location = new System.Drawing.Point(36, 37);
             this.hintTextBox2.Name = "hintTextBox2";
-            this.hintTextBox2.Size = new System.Drawing.Size(278, 22);
+            this.hintTextBox2.Size = new System.Drawing.Size(277, 22);
             this.hintTextBox2.TabIndex = 1;
             this.hintTextBox2.Text = "ID";
             this.hintTextBox2.TextForeColor = System.Drawing.Color.Black;
@@ -159,7 +159,7 @@
             this.hintTextBox1.HintValue = "Student ID";
             this.hintTextBox1.Location = new System.Drawing.Point(36, 79);
             this.hintTextBox1.Name = "hintTextBox1";
-            this.hintTextBox1.Size = new System.Drawing.Size(278, 22);
+            this.hintTextBox1.Size = new System.Drawing.Size(277, 22);
             this.hintTextBox1.TabIndex = 0;
             this.hintTextBox1.Text = "Student ID";
             this.hintTextBox1.TextForeColor = System.Drawing.Color.Black;
@@ -174,7 +174,7 @@
             this.hintTextBox3.HintValue = "Firstname";
             this.hintTextBox3.Location = new System.Drawing.Point(36, 115);
             this.hintTextBox3.Name = "hintTextBox3";
-            this.hintTextBox3.Size = new System.Drawing.Size(278, 22);
+            this.hintTextBox3.Size = new System.Drawing.Size(277, 22);
             this.hintTextBox3.TabIndex = 2;
             this.hintTextBox3.Text = "Firstname";
             this.hintTextBox3.TextForeColor = System.Drawing.Color.Black;
@@ -189,7 +189,7 @@
             this.hintTextBox4.HintValue = "Lastname";
             this.hintTextBox4.Location = new System.Drawing.Point(36, 149);
             this.hintTextBox4.Name = "hintTextBox4";
-            this.hintTextBox4.Size = new System.Drawing.Size(278, 22);
+            this.hintTextBox4.Size = new System.Drawing.Size(277, 22);
             this.hintTextBox4.TabIndex = 3;
             this.hintTextBox4.Text = "Lastname";
             this.hintTextBox4.TextForeColor = System.Drawing.Color.Black;
@@ -207,7 +207,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(278, 29);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(277, 29);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // dateTimePicker1
@@ -215,14 +215,14 @@
             this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateTimePicker1.Location = new System.Drawing.Point(3, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(203, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(202, 22);
             this.dateTimePicker1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(212, 7);
+            this.label1.Location = new System.Drawing.Point(211, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 14);
             this.label1.TabIndex = 1;
@@ -240,7 +240,7 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(278, 26);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(277, 26);
             this.tableLayoutPanel3.TabIndex = 9;
             // 
             // comboBox1
@@ -249,14 +249,14 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(3, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(202, 22);
+            this.comboBox1.Size = new System.Drawing.Size(201, 22);
             this.comboBox1.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(211, 6);
+            this.label2.Location = new System.Drawing.Point(210, 6);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 14);
             this.label2.TabIndex = 1;
@@ -270,7 +270,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.label3.Location = new System.Drawing.Point(36, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(278, 15);
+            this.label3.Size = new System.Drawing.Size(277, 15);
             this.label3.TabIndex = 13;
             this.label3.Text = "Student Details";
             // 
@@ -278,7 +278,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.pictureBox1.Image = global::Attendance_Management_System.Properties.Resources.facebook_no_profile_picture;
-            this.pictureBox1.Location = new System.Drawing.Point(401, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(400, 37);
             this.pictureBox1.Name = "pictureBox1";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox1, 4);
             this.pictureBox1.Size = new System.Drawing.Size(135, 137);
@@ -292,7 +292,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.label4.Location = new System.Drawing.Point(335, 9);
+            this.label4.Location = new System.Drawing.Point(334, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(267, 15);
             this.label4.TabIndex = 14;
@@ -305,7 +305,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.label5.Location = new System.Drawing.Point(335, 187);
+            this.label5.Location = new System.Drawing.Point(334, 187);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(267, 15);
             this.label5.TabIndex = 16;
@@ -319,7 +319,7 @@
             this.hintTextBox5.ForeColor = System.Drawing.Color.Gray;
             this.hintTextBox5.HintColor = System.Drawing.Color.Gray;
             this.hintTextBox5.HintValue = "Next Of Kin";
-            this.hintTextBox5.Location = new System.Drawing.Point(335, 217);
+            this.hintTextBox5.Location = new System.Drawing.Point(334, 217);
             this.hintTextBox5.Name = "hintTextBox5";
             this.hintTextBox5.Size = new System.Drawing.Size(267, 22);
             this.hintTextBox5.TabIndex = 10;
@@ -334,7 +334,7 @@
             this.hintTextBox6.ForeColor = System.Drawing.Color.Gray;
             this.hintTextBox6.HintColor = System.Drawing.Color.Gray;
             this.hintTextBox6.HintValue = "Contact No";
-            this.hintTextBox6.Location = new System.Drawing.Point(335, 250);
+            this.hintTextBox6.Location = new System.Drawing.Point(334, 250);
             this.hintTextBox6.Name = "hintTextBox6";
             this.hintTextBox6.Size = new System.Drawing.Size(267, 22);
             this.hintTextBox6.TabIndex = 11;
@@ -351,7 +351,7 @@
             this.hintTextBox7.ForeColor = System.Drawing.Color.Gray;
             this.hintTextBox7.HintColor = System.Drawing.Color.Gray;
             this.hintTextBox7.HintValue = "Postal Address";
-            this.hintTextBox7.Location = new System.Drawing.Point(335, 281);
+            this.hintTextBox7.Location = new System.Drawing.Point(334, 281);
             this.hintTextBox7.Multiline = true;
             this.hintTextBox7.Name = "hintTextBox7";
             this.tableLayoutPanel1.SetRowSpan(this.hintTextBox7, 2);
@@ -367,7 +367,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.label7.Location = new System.Drawing.Point(621, 187);
+            this.label7.Location = new System.Drawing.Point(620, 187);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(275, 15);
             this.label7.TabIndex = 18;
@@ -387,7 +387,7 @@
             this.hintTextBox9.Multiline = true;
             this.hintTextBox9.Name = "hintTextBox9";
             this.tableLayoutPanel1.SetRowSpan(this.hintTextBox9, 2);
-            this.hintTextBox9.Size = new System.Drawing.Size(278, 67);
+            this.hintTextBox9.Size = new System.Drawing.Size(277, 67);
             this.hintTextBox9.TabIndex = 23;
             this.hintTextBox9.Text = "Residential Address";
             this.hintTextBox9.TextForeColor = System.Drawing.Color.Black;
@@ -401,7 +401,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
             this.tableLayoutPanel5.Controls.Add(this.label8, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.comboBox3, 0, 0);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(621, 354);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(620, 354);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -439,7 +439,7 @@
             this.hintTextBox8.ForeColor = System.Drawing.Color.Gray;
             this.hintTextBox8.HintColor = System.Drawing.Color.Gray;
             this.hintTextBox8.HintValue = "Number Of Subjects";
-            this.hintTextBox8.Location = new System.Drawing.Point(621, 320);
+            this.hintTextBox8.Location = new System.Drawing.Point(620, 320);
             this.hintTextBox8.Name = "hintTextBox8";
             this.hintTextBox8.Size = new System.Drawing.Size(275, 22);
             this.hintTextBox8.TabIndex = 19;
@@ -456,7 +456,7 @@
             this.tableLayoutPanel4.Controls.Add(this.comboBox2, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label6, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.label9, 1, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(621, 283);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(620, 283);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -500,7 +500,7 @@
             this.hintTextBox10.ForeColor = System.Drawing.Color.Gray;
             this.hintTextBox10.HintColor = System.Drawing.Color.Gray;
             this.hintTextBox10.HintValue = "Previous School";
-            this.hintTextBox10.Location = new System.Drawing.Point(621, 250);
+            this.hintTextBox10.Location = new System.Drawing.Point(620, 250);
             this.hintTextBox10.Name = "hintTextBox10";
             this.hintTextBox10.Size = new System.Drawing.Size(275, 22);
             this.hintTextBox10.TabIndex = 24;
@@ -515,7 +515,7 @@
             this.hintTextBox11.ForeColor = System.Drawing.Color.Gray;
             this.hintTextBox11.HintColor = System.Drawing.Color.Gray;
             this.hintTextBox11.HintValue = "Previous candidate No.";
-            this.hintTextBox11.Location = new System.Drawing.Point(621, 217);
+            this.hintTextBox11.Location = new System.Drawing.Point(620, 217);
             this.hintTextBox11.Name = "hintTextBox11";
             this.hintTextBox11.Size = new System.Drawing.Size(275, 22);
             this.hintTextBox11.TabIndex = 25;
@@ -554,7 +554,7 @@
             this.hintTextBox12.ForeColor = System.Drawing.Color.Gray;
             this.hintTextBox12.HintColor = System.Drawing.Color.Gray;
             this.hintTextBox12.HintValue = "School Address";
-            this.hintTextBox12.Location = new System.Drawing.Point(621, 380);
+            this.hintTextBox12.Location = new System.Drawing.Point(620, 380);
             this.hintTextBox12.Multiline = true;
             this.hintTextBox12.Name = "hintTextBox12";
             this.hintTextBox12.Size = new System.Drawing.Size(275, 59);
@@ -576,7 +576,7 @@
             this.hintTextBox13.Multiline = true;
             this.hintTextBox13.Name = "hintTextBox13";
             this.tableLayoutPanel1.SetRowSpan(this.hintTextBox13, 2);
-            this.hintTextBox13.Size = new System.Drawing.Size(278, 85);
+            this.hintTextBox13.Size = new System.Drawing.Size(277, 85);
             this.hintTextBox13.TabIndex = 28;
             this.hintTextBox13.Text = "2 Residential Address: Optional";
             this.hintTextBox13.TextForeColor = System.Drawing.Color.Black;
@@ -591,7 +591,7 @@
             this.hintTextBox14.ForeColor = System.Drawing.Color.Gray;
             this.hintTextBox14.HintColor = System.Drawing.Color.Gray;
             this.hintTextBox14.HintValue = "2 Postal Address: Optional";
-            this.hintTextBox14.Location = new System.Drawing.Point(335, 354);
+            this.hintTextBox14.Location = new System.Drawing.Point(334, 354);
             this.hintTextBox14.Multiline = true;
             this.hintTextBox14.Name = "hintTextBox14";
             this.tableLayoutPanel1.SetRowSpan(this.hintTextBox14, 2);
@@ -614,6 +614,7 @@
             this.BtnCreate.TabIndex = 30;
             this.BtnCreate.Text = "CREATE";
             this.BtnCreate.UseVisualStyleBackColor = false;
+            this.BtnCreate.Click += new System.EventHandler(this.BtnCreate_Click);
             // 
             // BtnReset
             // 
@@ -622,12 +623,13 @@
             this.BtnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnReset.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnReset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnReset.Location = new System.Drawing.Point(621, 445);
+            this.BtnReset.Location = new System.Drawing.Point(620, 445);
             this.BtnReset.Name = "BtnReset";
             this.BtnReset.Size = new System.Drawing.Size(111, 31);
             this.BtnReset.TabIndex = 31;
             this.BtnReset.Text = "RESET";
             this.BtnReset.UseVisualStyleBackColor = false;
+            this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // userNewStudent
             // 

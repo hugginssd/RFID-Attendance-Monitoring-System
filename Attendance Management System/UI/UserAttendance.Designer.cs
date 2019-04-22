@@ -60,6 +60,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -286,6 +287,7 @@
             this.txtUpdatedAt.Name = "txtUpdatedAt";
             this.txtUpdatedAt.Size = new System.Drawing.Size(171, 23);
             this.txtUpdatedAt.TabIndex = 12;
+            this.txtUpdatedAt.Text = "Owner";
             this.txtUpdatedAt.TextForeColor = System.Drawing.Color.Black;
             this.txtUpdatedAt.Value = "";
             // 
@@ -301,6 +303,7 @@
             this.hintTextBox1.Name = "hintTextBox1";
             this.hintTextBox1.Size = new System.Drawing.Size(171, 23);
             this.hintTextBox1.TabIndex = 11;
+            this.hintTextBox1.Text = "Owner";
             this.hintTextBox1.TextForeColor = System.Drawing.Color.Black;
             this.hintTextBox1.Value = "";
             // 
@@ -426,7 +429,7 @@
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
             this.tableLayoutPanel1.SetColumnSpan(this.label7, 10);
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Humanst521 BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -486,5 +489,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.IO.Ports.SerialPort serialPort1;
     }
 }

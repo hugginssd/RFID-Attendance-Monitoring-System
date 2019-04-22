@@ -48,6 +48,9 @@ namespace Attendance_Management_System
             btnNoticeBoard.Visible = true;
             btnSystemUsers.Visible = true;
             BtnAttendanceMonitoring.Visible = false;
+            BtnNewSystemUsers.Visible = false;
+            BtnManageSystemUsers.Visible = false;
+            userStudentMasterDetails.Visible = false;
             useDashboard.Visible = true;
             useDashboard.BringToFront();
         }
@@ -104,6 +107,8 @@ namespace Attendance_Management_System
             pnlSidePanel.BackColor = Color.Wheat;
             pnlSidePanel.Location = new Point(0, 122);
             pnlSidePanel.Size = new Size(7, btnAdministration.Height);
+            userStudentMasterDetails.Visible = true;
+            userStudentMasterDetails.BringToFront();
         }
 
         private void btnAttendance_Click(object sender, EventArgs e)
@@ -142,7 +147,15 @@ namespace Attendance_Management_System
             {
                 BtnNewSystemUsers.Visible = true;
                 BtnManageSystemUsers.Visible = true;
-
+                btnSettings.Visible = false;
+                btnExit.Visible = false;
+            }
+            else
+            {
+                BtnNewSystemUsers.Visible = false;
+                BtnManageSystemUsers.Visible = false;
+                btnSettings.Visible = true;
+                btnExit.Visible = true;
             }
         }
 
@@ -164,6 +177,8 @@ namespace Attendance_Management_System
 
                 Application.Exit();
             }
+            pnlSidePanel.Location = new Point(0, 69);
+            pnlSidePanel.Size = new Size(7, btnDashboard.Height);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -195,6 +210,18 @@ namespace Attendance_Management_System
         {
             userAttendance.Visible = true;
             userAttendance.BringToFront();
+        }
+
+        private void BtnNewSystemUsers_Click(object sender, EventArgs e)
+        {
+            userSystemUsers.Visible = true;
+            userSystemUsers.BringToFront();
+        }
+
+        private void BtnManageSystemUsers_Click(object sender, EventArgs e)
+        {
+            userManageSystemUsers.Visible = true;
+            userManageSystemUsers.BringToFront();
         }
     }
 }

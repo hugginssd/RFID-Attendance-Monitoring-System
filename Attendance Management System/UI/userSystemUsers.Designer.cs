@@ -265,20 +265,21 @@
             // 
             // CmbRoles
             // 
+            this.CmbRoles.Font = new System.Drawing.Font("Humanst521 BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbRoles.FormattingEnabled = true;
             this.CmbRoles.Items.AddRange(new object[] {
             "User",
             "Super User"});
             this.CmbRoles.Location = new System.Drawing.Point(14, 412);
             this.CmbRoles.Name = "CmbRoles";
-            this.CmbRoles.Size = new System.Drawing.Size(198, 21);
+            this.CmbRoles.Size = new System.Drawing.Size(198, 22);
             this.CmbRoles.TabIndex = 56;
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
             this.label3.Font = new System.Drawing.Font("Humanst521 BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(0, 0);
