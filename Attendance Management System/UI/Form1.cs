@@ -47,6 +47,7 @@ namespace Attendance_Management_System
             btnManageStudent.Visible = false;
             btnNoticeBoard.Visible = true;
             btnSystemUsers.Visible = true;
+            BtnAttendanceMonitoring.Visible = false;
             useDashboard.Visible = true;
             useDashboard.BringToFront();
         }
@@ -110,6 +111,18 @@ namespace Attendance_Management_System
             pnlSidePanel.BackColor = Color.Wheat;
             pnlSidePanel.Location = new Point(0,175);
             pnlSidePanel.Size = new Size(7, btnAttendance.Height);
+            i = i + 1;
+            if (i%2==0)
+            {
+                btnStudentDetails.Visible = false;
+                BtnAttendanceMonitoring.Visible = true;
+                BtnAttendanceMonitoring.BringToFront();
+            }
+            else
+            {
+                btnStudentDetails.Visible = true;
+                BtnAttendanceMonitoring.Visible = false;
+            }
         }
 
         private void btnNoticeBoard_Click(object sender, EventArgs e)
@@ -124,6 +137,13 @@ namespace Attendance_Management_System
             pnlSidePanel.BackColor = Color.Wheat;
             pnlSidePanel.Location = new Point(0, 334);
             pnlSidePanel.Size = new Size(7, btnSystemUsers.Height);
+            i = i + 1;
+            if (i%2 == 0)
+            {
+                BtnNewSystemUsers.Visible = true;
+                BtnManageSystemUsers.Visible = true;
+
+            }
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
@@ -169,6 +189,12 @@ namespace Attendance_Management_System
             userStudentDetailss.BringToFront();
             userNewStudentt.Visible = false;
             
+        }
+
+        private void BtnAttendanceMonitoring_Click(object sender, EventArgs e)
+        {
+            userAttendance.Visible = true;
+            userAttendance.BringToFront();
         }
     }
 }

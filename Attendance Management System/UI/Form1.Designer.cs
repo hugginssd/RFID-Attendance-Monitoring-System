@@ -58,9 +58,14 @@
             this.lblMinimize = new System.Windows.Forms.Label();
             this.lblClose = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.BtnAttendanceMonitoring = new System.Windows.Forms.Button();
+            this.userSystemUsers1 = new Attendance_Management_System.UI.userSystemUsers();
+            this.userAttendance = new Attendance_Management_System.UI.UserAttendance();
             this.userNewStudentt = new Attendance_Management_System.UI.userNewStudent();
             this.userStudentDetailss = new Attendance_Management_System.userStudentDetails();
             this.useDashboard = new Attendance_Management_System.userDashboard();
+            this.BtnNewSystemUsers = new System.Windows.Forms.Button();
+            this.BtnManageSystemUsers = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -86,6 +91,9 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(144)))), ((int)(((byte)(210)))));
+            this.panel5.Controls.Add(this.BtnManageSystemUsers);
+            this.panel5.Controls.Add(this.BtnNewSystemUsers);
+            this.panel5.Controls.Add(this.BtnAttendanceMonitoring);
             this.panel5.Controls.Add(this.btnManageStudent);
             this.panel5.Controls.Add(this.btnNewStudent);
             this.panel5.Controls.Add(this.pictureBox2);
@@ -470,6 +478,8 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.panel6.Controls.Add(this.userSystemUsers1);
+            this.panel6.Controls.Add(this.userAttendance);
             this.panel6.Controls.Add(this.userNewStudentt);
             this.panel6.Controls.Add(this.userStudentDetailss);
             this.panel6.Controls.Add(this.useDashboard);
@@ -478,6 +488,34 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(900, 521);
             this.panel6.TabIndex = 2;
+            // 
+            // BtnAttendanceMonitoring
+            // 
+            this.BtnAttendanceMonitoring.FlatAppearance.BorderSize = 0;
+            this.BtnAttendanceMonitoring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAttendanceMonitoring.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAttendanceMonitoring.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnAttendanceMonitoring.Location = new System.Drawing.Point(63, 228);
+            this.BtnAttendanceMonitoring.Name = "BtnAttendanceMonitoring";
+            this.BtnAttendanceMonitoring.Size = new System.Drawing.Size(138, 38);
+            this.BtnAttendanceMonitoring.TabIndex = 11;
+            this.BtnAttendanceMonitoring.Text = "Attendance Monitoring";
+            this.BtnAttendanceMonitoring.UseVisualStyleBackColor = true;
+            this.BtnAttendanceMonitoring.Click += new System.EventHandler(this.BtnAttendanceMonitoring_Click);
+            // 
+            // userSystemUsers1
+            // 
+            this.userSystemUsers1.Location = new System.Drawing.Point(0, 1);
+            this.userSystemUsers1.Name = "userSystemUsers1";
+            this.userSystemUsers1.Size = new System.Drawing.Size(1027, 517);
+            this.userSystemUsers1.TabIndex = 4;
+            // 
+            // userAttendance
+            // 
+            this.userAttendance.Location = new System.Drawing.Point(-4, -7);
+            this.userAttendance.Name = "userAttendance";
+            this.userAttendance.Size = new System.Drawing.Size(1027, 528);
+            this.userAttendance.TabIndex = 3;
             // 
             // userNewStudentt
             // 
@@ -500,6 +538,32 @@
             this.useDashboard.Name = "useDashboard";
             this.useDashboard.Size = new System.Drawing.Size(900, 520);
             this.useDashboard.TabIndex = 0;
+            // 
+            // BtnNewSystemUsers
+            // 
+            this.BtnNewSystemUsers.FlatAppearance.BorderSize = 0;
+            this.BtnNewSystemUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNewSystemUsers.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNewSystemUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnNewSystemUsers.Location = new System.Drawing.Point(63, 387);
+            this.BtnNewSystemUsers.Name = "BtnNewSystemUsers";
+            this.BtnNewSystemUsers.Size = new System.Drawing.Size(138, 32);
+            this.BtnNewSystemUsers.TabIndex = 12;
+            this.BtnNewSystemUsers.Text = "New System Users";
+            this.BtnNewSystemUsers.UseVisualStyleBackColor = true;
+            // 
+            // BtnManageSystemUsers
+            // 
+            this.BtnManageSystemUsers.FlatAppearance.BorderSize = 0;
+            this.BtnManageSystemUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnManageSystemUsers.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManageSystemUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnManageSystemUsers.Location = new System.Drawing.Point(63, 422);
+            this.BtnManageSystemUsers.Name = "BtnManageSystemUsers";
+            this.BtnManageSystemUsers.Size = new System.Drawing.Size(138, 30);
+            this.BtnManageSystemUsers.TabIndex = 13;
+            this.BtnManageSystemUsers.Text = "Manage System Users";
+            this.BtnManageSystemUsers.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -568,6 +632,11 @@
         private userDashboard useDashboard;
         private userStudentDetails userStudentDetailss;
         private UI.userNewStudent userNewStudentt;
+        private System.Windows.Forms.Button BtnAttendanceMonitoring;
+        private UI.UserAttendance userAttendance;
+        private UI.userSystemUsers userSystemUsers1;
+        private System.Windows.Forms.Button BtnManageSystemUsers;
+        private System.Windows.Forms.Button BtnNewSystemUsers;
     }
 }
 
