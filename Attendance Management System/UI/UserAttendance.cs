@@ -17,13 +17,21 @@ namespace Attendance_Management_System.UI
         {
             InitializeComponent();
 
-            serialPort1.BaudRate = 9600;
-            serialPort1.PortName = "COM1";
-            serialPort1.DataBits = 8;
-            serialPort1.Parity = Parity.None;
-            serialPort1.StopBits = StopBits.One;
-            serialPort1.Open();
-            serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort_DataReceived);
+            try
+            {
+                serialPort1.BaudRate = 9600;
+                serialPort1.PortName = "COM1";
+                serialPort1.DataBits = 8;
+                serialPort1.Parity = Parity.None;
+                serialPort1.StopBits = StopBits.One;
+                serialPort1.Open();
+                serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort_DataReceived);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                MessageBox.Show(ex.ToString(), "Failed To Open Communication Port", MessageBoxButtons.OK, MessageBoxIcon.Error,
+                    MessageBoxDefaultButton.Button1);
+            }
         }
         private void serialPort_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
