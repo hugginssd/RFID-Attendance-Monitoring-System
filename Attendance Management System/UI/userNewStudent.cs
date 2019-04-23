@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Attendance_Management_System.BLL;
+using Attendance_Management_System.DAL;
+using iTextSharp.text.xml;
 
 namespace Attendance_Management_System.UI
 {
@@ -16,15 +19,11 @@ namespace Attendance_Management_System.UI
         {
             InitializeComponent();
         }
-
-        private void materialRaisedButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        StudentBLL sbll = new StudentBLL();
+        StudentDAL sdal = new StudentDAL();
         private void BtnCreate_Click(object sender, EventArgs e)
         {
-
+            //sbll.CandidateNo = 
         }
 
         private void BtnReset_Click(object sender, EventArgs e)

@@ -10,7 +10,7 @@ using Attendance_Management_System.BLL;
 
 namespace Attendance_Management_System.DAL
 {
-    class studentDAL
+    class StudentDAL
     {
         public string connection = ConfigurationManager.ConnectionStrings["RFIDConnection"].ConnectionString;
 

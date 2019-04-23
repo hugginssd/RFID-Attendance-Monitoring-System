@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Attendance_Management_System.BLL;
+using Attendance_Management_System.DAL;
 
 namespace Attendance_Management_System.UI
 {
@@ -33,11 +35,18 @@ namespace Attendance_Management_System.UI
                     MessageBoxDefaultButton.Button1);
             }
         }
+        AttendanceDAL adal = new AttendanceDAL();
+        AttendanceBLL abll = new AttendanceBLL();
         private void serialPort_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
         {
             string line = serialPort1.ReadLine();
             string spdata =  serialPort1.ReadExisting();
             Console.WriteLine(spdata);
+            //scan in scan out
+            DataTable dt = new DataTable();
+            dt = adal.ScanIn(spdata.ToString());
+            dataGridView1.DataSource = dt;
+
         }
 
         private delegate void LineReceivedEvent(string line);

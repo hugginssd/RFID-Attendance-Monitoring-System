@@ -14,12 +14,21 @@ namespace Attendance_Management_System.DAL
     {
         public string connection = ConfigurationManager.ConnectionStrings["RFIDConnection"].ConnectionString;
 
-        public DataTable ScanIn()
+        public DataTable ScanIn(string serial)
         {
             DataTable dt = null;
             SqlConnection con = new SqlConnection(connection);
             //Join tables
-            string sql = "";
+            string sql = "SELECT [dbo].[Student].[STUDENTID]" +
+                ",[FIRSTNAME]" +
+                ",[LASTNAME]" +
+                ",[CLASSNAME]" +
+            "FROM[dbo].[Student]" +
+            "INNER JOIN[dbo].[TagsSerials]" +
+            "ON[dbo].[Student].[STUDENTID] = [dbo].[TagsSerials].[STUDENTID]" +
+            "INNER JOIN[dbo].[Class]" +
+            "ON[dbo].[Student].[CLASSID] = [dbo].[Class].[CLASSID]" +
+            "WHERE[dbo].[Student].[STUDENTID] = " + serial;
 
 
             try
