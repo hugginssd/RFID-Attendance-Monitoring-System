@@ -13,12 +13,12 @@ namespace Attendance_Management_System.DAL
 {
     class userDAL
     {
-        public string connection = ConfigurationManager.ConnectionStrings["RFIDConnection"].ConnectionString;
-
+        //public string connection = ConfigurationManager.ConnectionStrings["RFIDConnection"].ConnectionString;
+        Connection con = new Connection();
         public bool Insert(userBLL bll)
         {
             bool IsSuccess = false;
-            SqlConnection conn = new SqlConnection(connection);
+            SqlConnection conn = new SqlConnection(this.con.connection);
             string sql = "INSERT INTO [dbo].[Users]" +
                                                "([Id]" +
                                                ",[Name]" +
@@ -73,7 +73,7 @@ namespace Attendance_Management_System.DAL
         public DataTable Select(string keywords)
         {
             DataTable dt = null;
-            SqlConnection conn = new SqlConnection(connection);
+            SqlConnection conn = new SqlConnection(this.con.connection);
             string sql = "SELECT [Id]" +
                             ",[Name]" +
                             ",[LastName]" +
@@ -110,7 +110,7 @@ namespace Attendance_Management_System.DAL
         public bool Delete(userBLL bll)
         {
             bool IsSuccess = false;
-            SqlConnection conn = new SqlConnection(connection);
+            SqlConnection conn = new SqlConnection(this.con.connection);
             string sql = "DELETE FROM [dbo].[Users]" +
                                     "WHERE [Id]= @Id ";
 
@@ -144,7 +144,7 @@ namespace Attendance_Management_System.DAL
         public bool Update(userBLL bll)
         {
             bool IsSuccess = false;
-            SqlConnection conn = new SqlConnection(connection);
+            SqlConnection conn = new SqlConnection(this.con.connection);
             string sql = "UPDATE [dbo].[Users]" +
                                       "SET[Id] = @Id" +
                                       ",[Name] = @Name" +
@@ -187,7 +187,7 @@ namespace Attendance_Management_System.DAL
         public bool Search(userBLL bll)
         {
             bool IsSuccess = false;
-            SqlConnection conn = new SqlConnection(connection);
+            SqlConnection conn = new SqlConnection(this.con.connection);
             string sql = "SELECT [Id]" +
                               ",[Name]" +
                               ",[LastName]" +

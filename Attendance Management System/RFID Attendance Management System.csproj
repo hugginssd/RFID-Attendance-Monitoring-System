@@ -84,6 +84,7 @@
     <Compile Include="BLL\StudentBLL.cs" />
     <Compile Include="BLL\userBLL.cs" />
     <Compile Include="DAL\AttendanceDAL.cs" />
+    <Compile Include="DAL\Connection.cs" />
     <Compile Include="DAL\Functions.cs" />
     <Compile Include="DAL\ParentsDAL.cs" />
     <Compile Include="DAL\ScanInOut.cs" />

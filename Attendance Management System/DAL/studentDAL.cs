@@ -12,12 +12,12 @@ namespace Attendance_Management_System.DAL
 {
     class StudentDAL
     {
-        public string connection = ConfigurationManager.ConnectionStrings["RFIDConnection"].ConnectionString;
-
+        //public string connection = ConfigurationManager.ConnectionStrings["RFIDConnection"].ConnectionString;
+        Connection con = new Connection();
         public Boolean Insert(StudentBLL sbll)
         {
             bool IsSuccess = false;
-            SqlConnection con = new SqlConnection(connection);
+            SqlConnection con = new SqlConnection(this.con.connection);
             string sql = "INSERT INTO [dbo].[Student]"+
                                             "([FIRSTNAME]"+
                                             ",[LASTNAME]"+

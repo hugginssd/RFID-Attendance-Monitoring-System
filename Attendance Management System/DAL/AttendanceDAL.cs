@@ -12,23 +12,24 @@ namespace Attendance_Management_System.DAL
 {
     class AttendanceDAL
     {
-        public string connection = ConfigurationManager.ConnectionStrings["RFIDConnection"].ConnectionString;
-
+        //public string connection = ConfigurationManager.ConnectionStrings["RFIDConnection"].ConnectionString;
+       // private string connection = "Data Source=USER-PC\\SQLEXPRESS;Initial Catalog=RFIDAttendance;Integrated Security=True;Pooling=False";
+        Connection con = new Connection();
         public DataTable ScanIn(string serial)
         {
             DataTable dt = null;
-            SqlConnection con = new SqlConnection(connection);
+            SqlConnection con = new SqlConnection(this.con.connection);
             //Join tables
             string sql = "SELECT [dbo].[Student].[STUDENTID]" +
-                ",[FIRSTNAME]" +
-                ",[LASTNAME]" +
-                ",[CLASSNAME]" +
-            "FROM[dbo].[Student]" +
-            "INNER JOIN[dbo].[TagsSerials]" +
-            "ON[dbo].[Student].[STUDENTID] = [dbo].[TagsSerials].[STUDENTID]" +
-            "INNER JOIN[dbo].[Class]" +
-            "ON[dbo].[Student].[CLASSID] = [dbo].[Class].[CLASSID]" +
-            "WHERE[dbo].[Student].[STUDENTID] = " + serial;
+                                                ",[FIRSTNAME]" +
+                                                ",[LASTNAME]" +
+                                                ",[CLASSNAME]" +
+                                                "FROM[dbo].[Student]" +
+                                                "INNER JOIN[dbo].[TagsSerials]" +
+                                                "ON[dbo].[Student].[STUDENTID] = [dbo].[TagsSerials].[STUDENTID]" +
+                                                "INNER JOIN[dbo].[Class]" +
+                                                "ON[dbo].[Student].[CLASSID] = [dbo].[Class].[CLASSID]" +
+                                                "WHERE[dbo].[Student].[STUDENTID] = " + serial;
 
 
             try

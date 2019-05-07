@@ -19,8 +19,8 @@ namespace Attendance_Management_System.UI
         {
             InitializeComponent();
         }
-        StudentBLL sbll = new StudentBLL();
-        StudentDAL sdal = new StudentDAL();
+       // StudentBLL sbll = new StudentBLL();
+       // StudentDAL sdal = new StudentDAL();
         private void BtnCreate_Click(object sender, EventArgs e)
         {
             //sbll.CandidateNo = 
