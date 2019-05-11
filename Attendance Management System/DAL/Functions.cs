@@ -1,5 +1,5 @@
 ﻿using Attendance_Management_System.BLL;
-using Microsoft.Extensions.Configuration.IConfiguration;
+//using Microsoft.Extensions.Configuration.IConfiguration;
 using Nexmo.Api;
 using System;
 using System.Collections.Generic;

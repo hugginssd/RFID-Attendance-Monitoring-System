@@ -43,7 +43,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblBrowse = new System.Windows.Forms.Label();
             this.hintTextBox5 = new Windows.Forms.HintTextBox(this.components);
             this.hintTextBox6 = new Windows.Forms.HintTextBox(this.components);
             this.hintTextBox7 = new Windows.Forms.HintTextBox(this.components);
@@ -52,7 +52,6 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.hintTextBox8 = new Windows.Forms.HintTextBox(this.components);
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -61,11 +60,12 @@
             this.txtPreviousCandidateNo = new Windows.Forms.HintTextBox(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.hintTextBox12 = new Windows.Forms.HintTextBox(this.components);
+            this.TxtSchoolAddress = new Windows.Forms.HintTextBox(this.components);
             this.txtAddress2 = new Windows.Forms.HintTextBox(this.components);
             this.hintTextBox14 = new Windows.Forms.HintTextBox(this.components);
             this.BtnCreate = new System.Windows.Forms.Button();
             this.BtnReset = new System.Windows.Forms.Button();
+            this.NuDNumberOfSubjects = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -73,6 +73,7 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NuDNumberOfSubjects)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -95,23 +96,23 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lblBrowse, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.hintTextBox5, 3, 6);
             this.tableLayoutPanel1.Controls.Add(this.hintTextBox6, 3, 7);
             this.tableLayoutPanel1.Controls.Add(this.hintTextBox7, 3, 8);
             this.tableLayoutPanel1.Controls.Add(this.label7, 5, 5);
             this.tableLayoutPanel1.Controls.Add(this.txtAddress1, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 5, 10);
-            this.tableLayoutPanel1.Controls.Add(this.hintTextBox8, 5, 9);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 5, 8);
             this.tableLayoutPanel1.Controls.Add(this.hintTextBox10, 5, 7);
             this.tableLayoutPanel1.Controls.Add(this.txtPreviousCandidateNo, 5, 6);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 13);
-            this.tableLayoutPanel1.Controls.Add(this.hintTextBox12, 5, 11);
+            this.tableLayoutPanel1.Controls.Add(this.TxtSchoolAddress, 5, 11);
             this.tableLayoutPanel1.Controls.Add(this.txtAddress2, 1, 10);
             this.tableLayoutPanel1.Controls.Add(this.hintTextBox14, 3, 10);
             this.tableLayoutPanel1.Controls.Add(this.BtnCreate, 1, 12);
             this.tableLayoutPanel1.Controls.Add(this.BtnReset, 5, 12);
+            this.tableLayoutPanel1.Controls.Add(this.NuDNumberOfSubjects, 5, 9);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Humanst521 BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-10, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -299,18 +300,19 @@
             this.label4.Text = "Contact Details";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // lblBrowse
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.label5.Location = new System.Drawing.Point(330, 187);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(267, 15);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "&Browse";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBrowse.AutoSize = true;
+            this.lblBrowse.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrowse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblBrowse.Location = new System.Drawing.Point(330, 187);
+            this.lblBrowse.Name = "lblBrowse";
+            this.lblBrowse.Size = new System.Drawing.Size(267, 15);
+            this.lblBrowse.TabIndex = 16;
+            this.lblBrowse.Text = "&Browse";
+            this.lblBrowse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBrowse.Click += new System.EventHandler(this.lblBrowse_Click);
             // 
             // hintTextBox5
             // 
@@ -432,21 +434,6 @@
             this.comboBox3.Size = new System.Drawing.Size(190, 22);
             this.comboBox3.TabIndex = 7;
             // 
-            // hintTextBox8
-            // 
-            this.hintTextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.hintTextBox8.EnterToTab = false;
-            this.hintTextBox8.ForeColor = System.Drawing.Color.Gray;
-            this.hintTextBox8.HintColor = System.Drawing.Color.Gray;
-            this.hintTextBox8.HintValue = "Number Of Subjects";
-            this.hintTextBox8.Location = new System.Drawing.Point(616, 320);
-            this.hintTextBox8.Name = "hintTextBox8";
-            this.hintTextBox8.Size = new System.Drawing.Size(275, 22);
-            this.hintTextBox8.TabIndex = 19;
-            this.hintTextBox8.Text = "Number Of Subjects";
-            this.hintTextBox8.TextForeColor = System.Drawing.Color.Black;
-            this.hintTextBox8.Value = "";
-            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -545,23 +532,23 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Developed by Mambo Chami";
             // 
-            // hintTextBox12
+            // TxtSchoolAddress
             // 
-            this.hintTextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TxtSchoolAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.hintTextBox12.EnterToTab = false;
-            this.hintTextBox12.ForeColor = System.Drawing.Color.Gray;
-            this.hintTextBox12.HintColor = System.Drawing.Color.Gray;
-            this.hintTextBox12.HintValue = "School Address";
-            this.hintTextBox12.Location = new System.Drawing.Point(616, 380);
-            this.hintTextBox12.Multiline = true;
-            this.hintTextBox12.Name = "hintTextBox12";
-            this.hintTextBox12.Size = new System.Drawing.Size(275, 59);
-            this.hintTextBox12.TabIndex = 27;
-            this.hintTextBox12.Text = "School Address";
-            this.hintTextBox12.TextForeColor = System.Drawing.Color.Black;
-            this.hintTextBox12.Value = "";
+            this.TxtSchoolAddress.EnterToTab = false;
+            this.TxtSchoolAddress.ForeColor = System.Drawing.Color.Gray;
+            this.TxtSchoolAddress.HintColor = System.Drawing.Color.Gray;
+            this.TxtSchoolAddress.HintValue = "School Address";
+            this.TxtSchoolAddress.Location = new System.Drawing.Point(616, 380);
+            this.TxtSchoolAddress.Multiline = true;
+            this.TxtSchoolAddress.Name = "TxtSchoolAddress";
+            this.TxtSchoolAddress.Size = new System.Drawing.Size(275, 59);
+            this.TxtSchoolAddress.TabIndex = 27;
+            this.TxtSchoolAddress.Text = "School Address";
+            this.TxtSchoolAddress.TextForeColor = System.Drawing.Color.Black;
+            this.TxtSchoolAddress.Value = "";
             // 
             // txtAddress2
             // 
@@ -631,6 +618,24 @@
             this.BtnReset.UseVisualStyleBackColor = false;
             this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
+            // NuDNumberOfSubjects
+            // 
+            this.NuDNumberOfSubjects.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NuDNumberOfSubjects.Location = new System.Drawing.Point(616, 321);
+            this.NuDNumberOfSubjects.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NuDNumberOfSubjects.Name = "NuDNumberOfSubjects";
+            this.NuDNumberOfSubjects.Size = new System.Drawing.Size(275, 22);
+            this.NuDNumberOfSubjects.TabIndex = 32;
+            this.NuDNumberOfSubjects.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // userNewStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -651,6 +656,7 @@
             this.tableLayoutPanel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NuDNumberOfSubjects)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -674,9 +680,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblBrowse;
         private System.Windows.Forms.Label label7;
-        private Windows.Forms.HintTextBox hintTextBox8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label8;
@@ -689,10 +694,11 @@
         private Windows.Forms.HintTextBox txtPreviousCandidateNo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
-        private Windows.Forms.HintTextBox hintTextBox12;
+        private Windows.Forms.HintTextBox TxtSchoolAddress;
         private Windows.Forms.HintTextBox txtAddress2;
         private Windows.Forms.HintTextBox hintTextBox14;
         private System.Windows.Forms.Button BtnCreate;
         private System.Windows.Forms.Button BtnReset;
+        private System.Windows.Forms.NumericUpDown NuDNumberOfSubjects;
     }
 }

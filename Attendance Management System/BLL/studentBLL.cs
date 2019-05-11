@@ -14,12 +14,12 @@ namespace Attendance_Management_System.BLL
         public DateTime DOB { get; set; }
         public int ClassID { get; set; }
         public  string Email { get; set; }
-        public byte Picture { get; set; }
+        public byte[] Picture { get; set; }
         public char Gender { get; set; }
         public string Address { get; set; }
         public string Address2 { get; set; }
         public string CandidateNo { get; set; }
-        public int NoOfSubjects { get; set; }
+        public decimal NoOfSubjects { get; set; }
         public string SchoolAddress { get; set; }
     }
 }

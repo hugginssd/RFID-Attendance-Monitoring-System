@@ -10,7 +10,6 @@ C:\Users\user\source\repos\Attendance Management System\Attendance Management Sy
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\bin\Debug\itextsharp.xml
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\bin\Debug\LibUsbDotNet.LibUsbDotNet.pdb
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\bin\Debug\Windows.Forms.HintTextBox.pdb
-C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\RFID Attendance Management System.csprojResolveAssemblyReference.cache
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.Form1.resources
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.frmLogin.resources
 C:\Users\user\source\repos\Attendance Management System\Attendance Management System\obj\Debug\Attendance_Management_System.Properties.Resources.resources
