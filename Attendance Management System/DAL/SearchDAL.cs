@@ -62,6 +62,7 @@ namespace Attendance_Management_System.DAL
         }
         public DataTable SearchStudentHours(string StudentID)
         {
+
             DataTable dt = null;
             SqlConnection con = new SqlConnection(_con.connection);
             string sql = "SELECT [ATTENDANCEID]"+
@@ -83,6 +84,37 @@ namespace Attendance_Management_System.DAL
             {   
                 MessageBox.Show(ex.ToString(),"Data Access Error");
             }finally
+            {
+                con.Close();
+            }
+            return dt;
+        }
+        public DataTable SearchStudentAttendance(string StudentID)
+        {
+            DataTable dt = null;
+            SqlConnection con = new SqlConnection(_con.connection);
+            string sql = "SELECT [ATTENDANCEID]"+
+                                      ",[STUDENTID]"+
+                                      ",[ATTENDANCE]"+
+                                      ",[DATEATTENDED]"+
+                                      ",[TIMEIN]" +
+                                      ",[TIMEOUT]" +
+                                      ", COUNT(DATEDIFF(HOUR,[TIMEIN],[TIMEOUT])) AS[HOURS]"+
+                                  "FROM[dbo].[Attendance]" +
+                                  "WHERE[dbo].[Student].[STUDENTID] =" + StudentID;
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, con);
+                dt = new DataTable();
+                con.Open();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }       
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(),"Data Acces Error");
+            }
+            finally
             {
                 con.Close();
             }

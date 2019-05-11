@@ -231,7 +231,11 @@ namespace Attendance_Management_System
             DataTable dt = new DataTable();
             dt = sdal.SearchStudentAttendanceAndDetails(TxtMasterSearch.Text.Trim());
             usd.lblStudentID.Text = dt.Rows[0][0].ToString();
-
+            usd.lblCourse.Text = dt.Rows[0][18].ToString();
+            usd.lblMailID.Text = dt.Rows[0][3].ToString();
+            DataTable dt1 = new DataTable();
+            dt1 = sdal.SearchStudentAttendance(TxtMasterSearch.Text.Trim());
+            usd.dataGridView1.DataSource = dt1;
         }
     }
 }
