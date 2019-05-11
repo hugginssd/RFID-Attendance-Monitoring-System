@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.BtnManageSystemUsers = new System.Windows.Forms.Button();
+            this.BtnNewSystemUsers = new System.Windows.Forms.Button();
+            this.BtnAttendanceMonitoring = new System.Windows.Forms.Button();
             this.btnManageStudent = new System.Windows.Forms.Button();
             this.btnNewStudent = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -53,14 +56,11 @@
             this.btnCnrSignOut = new System.Windows.Forms.Button();
             this.btnProfile = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.hintTextBox1 = new Windows.Forms.HintTextBox(this.components);
+            this.TxtMasterSearch = new Windows.Forms.HintTextBox(this.components);
             this.lblMaximize = new System.Windows.Forms.Label();
             this.lblMinimize = new System.Windows.Forms.Label();
             this.lblClose = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.BtnAttendanceMonitoring = new System.Windows.Forms.Button();
-            this.BtnNewSystemUsers = new System.Windows.Forms.Button();
-            this.BtnManageSystemUsers = new System.Windows.Forms.Button();
             this.userStudentMasterDetails = new Attendance_Management_System.UI.UserStudentMasterDetails();
             this.userManageSystemUsers = new Attendance_Management_System.UI.userManageSystemUsers();
             this.userSystemUsers = new Attendance_Management_System.UI.userSystemUsers();
@@ -114,6 +114,48 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 521);
             this.panel5.TabIndex = 4;
+            // 
+            // BtnManageSystemUsers
+            // 
+            this.BtnManageSystemUsers.FlatAppearance.BorderSize = 0;
+            this.BtnManageSystemUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnManageSystemUsers.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManageSystemUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnManageSystemUsers.Location = new System.Drawing.Point(63, 422);
+            this.BtnManageSystemUsers.Name = "BtnManageSystemUsers";
+            this.BtnManageSystemUsers.Size = new System.Drawing.Size(138, 30);
+            this.BtnManageSystemUsers.TabIndex = 13;
+            this.BtnManageSystemUsers.Text = "Manage System Users";
+            this.BtnManageSystemUsers.UseVisualStyleBackColor = true;
+            this.BtnManageSystemUsers.Click += new System.EventHandler(this.BtnManageSystemUsers_Click);
+            // 
+            // BtnNewSystemUsers
+            // 
+            this.BtnNewSystemUsers.FlatAppearance.BorderSize = 0;
+            this.BtnNewSystemUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNewSystemUsers.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNewSystemUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnNewSystemUsers.Location = new System.Drawing.Point(63, 387);
+            this.BtnNewSystemUsers.Name = "BtnNewSystemUsers";
+            this.BtnNewSystemUsers.Size = new System.Drawing.Size(138, 32);
+            this.BtnNewSystemUsers.TabIndex = 12;
+            this.BtnNewSystemUsers.Text = "New System Users";
+            this.BtnNewSystemUsers.UseVisualStyleBackColor = true;
+            this.BtnNewSystemUsers.Click += new System.EventHandler(this.BtnNewSystemUsers_Click);
+            // 
+            // BtnAttendanceMonitoring
+            // 
+            this.BtnAttendanceMonitoring.FlatAppearance.BorderSize = 0;
+            this.BtnAttendanceMonitoring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAttendanceMonitoring.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAttendanceMonitoring.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnAttendanceMonitoring.Location = new System.Drawing.Point(63, 228);
+            this.BtnAttendanceMonitoring.Name = "BtnAttendanceMonitoring";
+            this.BtnAttendanceMonitoring.Size = new System.Drawing.Size(138, 38);
+            this.BtnAttendanceMonitoring.TabIndex = 11;
+            this.BtnAttendanceMonitoring.Text = "Attendance Monitoring";
+            this.BtnAttendanceMonitoring.UseVisualStyleBackColor = true;
+            this.BtnAttendanceMonitoring.Click += new System.EventHandler(this.BtnAttendanceMonitoring_Click);
             // 
             // btnManageStudent
             // 
@@ -370,7 +412,7 @@
             this.panel2.Controls.Add(this.btnCnrSignOut);
             this.panel2.Controls.Add(this.btnProfile);
             this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.hintTextBox1);
+            this.panel2.Controls.Add(this.TxtMasterSearch);
             this.panel2.Controls.Add(this.lblMaximize);
             this.panel2.Controls.Add(this.lblMinimize);
             this.panel2.Controls.Add(this.lblClose);
@@ -421,22 +463,24 @@
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
-            // hintTextBox1
+            // TxtMasterSearch
             // 
-            this.hintTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(185)))), ((int)(((byte)(247)))));
-            this.hintTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.hintTextBox1.EnterToTab = false;
-            this.hintTextBox1.Font = new System.Drawing.Font("Humanst521 BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hintTextBox1.ForeColor = System.Drawing.Color.White;
-            this.hintTextBox1.HintColor = System.Drawing.Color.White;
-            this.hintTextBox1.HintValue = "Search";
-            this.hintTextBox1.Location = new System.Drawing.Point(21, 22);
-            this.hintTextBox1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.hintTextBox1.Name = "hintTextBox1";
-            this.hintTextBox1.Size = new System.Drawing.Size(344, 15);
-            this.hintTextBox1.TabIndex = 3;
-            this.hintTextBox1.TextForeColor = System.Drawing.Color.White;
-            this.hintTextBox1.Value = "";
+            this.TxtMasterSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(185)))), ((int)(((byte)(247)))));
+            this.TxtMasterSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtMasterSearch.EnterToTab = false;
+            this.TxtMasterSearch.Font = new System.Drawing.Font("Humanst521 BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMasterSearch.ForeColor = System.Drawing.Color.White;
+            this.TxtMasterSearch.HintColor = System.Drawing.Color.White;
+            this.TxtMasterSearch.HintValue = "Search here.... <Student ID>";
+            this.TxtMasterSearch.Location = new System.Drawing.Point(21, 22);
+            this.TxtMasterSearch.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.TxtMasterSearch.Name = "TxtMasterSearch";
+            this.TxtMasterSearch.Size = new System.Drawing.Size(344, 15);
+            this.TxtMasterSearch.TabIndex = 3;
+            this.TxtMasterSearch.Text = "Search here.... <Student ID>";
+            this.TxtMasterSearch.TextForeColor = System.Drawing.Color.White;
+            this.TxtMasterSearch.Value = "";
+            this.TxtMasterSearch.TextChanged += new System.EventHandler(this.TxtMasterSearch_TextChanged);
             // 
             // lblMaximize
             // 
@@ -492,48 +536,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(900, 521);
             this.panel6.TabIndex = 2;
-            // 
-            // BtnAttendanceMonitoring
-            // 
-            this.BtnAttendanceMonitoring.FlatAppearance.BorderSize = 0;
-            this.BtnAttendanceMonitoring.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAttendanceMonitoring.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAttendanceMonitoring.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnAttendanceMonitoring.Location = new System.Drawing.Point(63, 228);
-            this.BtnAttendanceMonitoring.Name = "BtnAttendanceMonitoring";
-            this.BtnAttendanceMonitoring.Size = new System.Drawing.Size(138, 38);
-            this.BtnAttendanceMonitoring.TabIndex = 11;
-            this.BtnAttendanceMonitoring.Text = "Attendance Monitoring";
-            this.BtnAttendanceMonitoring.UseVisualStyleBackColor = true;
-            this.BtnAttendanceMonitoring.Click += new System.EventHandler(this.BtnAttendanceMonitoring_Click);
-            // 
-            // BtnNewSystemUsers
-            // 
-            this.BtnNewSystemUsers.FlatAppearance.BorderSize = 0;
-            this.BtnNewSystemUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNewSystemUsers.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNewSystemUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnNewSystemUsers.Location = new System.Drawing.Point(63, 387);
-            this.BtnNewSystemUsers.Name = "BtnNewSystemUsers";
-            this.BtnNewSystemUsers.Size = new System.Drawing.Size(138, 32);
-            this.BtnNewSystemUsers.TabIndex = 12;
-            this.BtnNewSystemUsers.Text = "New System Users";
-            this.BtnNewSystemUsers.UseVisualStyleBackColor = true;
-            this.BtnNewSystemUsers.Click += new System.EventHandler(this.BtnNewSystemUsers_Click);
-            // 
-            // BtnManageSystemUsers
-            // 
-            this.BtnManageSystemUsers.FlatAppearance.BorderSize = 0;
-            this.BtnManageSystemUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnManageSystemUsers.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnManageSystemUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnManageSystemUsers.Location = new System.Drawing.Point(63, 422);
-            this.BtnManageSystemUsers.Name = "BtnManageSystemUsers";
-            this.BtnManageSystemUsers.Size = new System.Drawing.Size(138, 30);
-            this.BtnManageSystemUsers.TabIndex = 13;
-            this.BtnManageSystemUsers.Text = "Manage System Users";
-            this.BtnManageSystemUsers.UseVisualStyleBackColor = true;
-            this.BtnManageSystemUsers.Click += new System.EventHandler(this.BtnManageSystemUsers_Click);
             // 
             // userStudentMasterDetails
             // 
@@ -641,7 +643,7 @@
         private System.Windows.Forms.Panel pnlSidePanel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnNewStudent;
-        private Windows.Forms.HintTextBox hintTextBox1;
+        private Windows.Forms.HintTextBox TxtMasterSearch;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button btnCnrSignOut;

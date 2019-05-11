@@ -84,6 +84,7 @@
   <ItemGroup>
     <Compile Include="BLL\AttendanceBLL.cs" />
     <Compile Include="BLL\ParentsBLL.cs" />
+    <Compile Include="BLL\SearchBLL.cs" />
     <Compile Include="BLL\StudentBLL.cs" />
     <Compile Include="BLL\UserBLL.cs" />
     <Compile Include="DAL\AttendanceDAL.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="DAL\Functions.cs" />
     <Compile Include="DAL\ParentsDAL.cs" />
     <Compile Include="DAL\ScanInOut.cs" />
+    <Compile Include="DAL\SearchDAL.cs" />
     <Compile Include="DAL\StudentDAL.cs" />
     <Compile Include="DAL\UserDAL.cs" />
     <Compile Include="UI\Form1.cs">

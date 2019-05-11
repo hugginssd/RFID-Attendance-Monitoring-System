@@ -31,7 +31,7 @@ namespace Attendance_Management_System.UI
             }
             catch (UnauthorizedAccessException ex)
             {
-                MessageBox.Show(ex.ToString(), "Failed To Open Communication Port", MessageBoxButtons.OK, MessageBoxIcon.Error,
+                MessageBox.Show(ex.ToString(), "Failed To Establish Communication Between Sensor and Sytem Interface", MessageBoxButtons.OK, MessageBoxIcon.Error,
                     MessageBoxDefaultButton.Button1);
             }
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Attendance_Management_System.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,7 @@ namespace Attendance_Management_System
            this.Size = new Size(1100, 563);
         }
         int i = 1;
+        SearchDAL sdal = new SearchDAL();
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
@@ -222,6 +224,14 @@ namespace Attendance_Management_System
         {
             userManageSystemUsers.Visible = true;
             userManageSystemUsers.BringToFront();
+        }
+        userStudentDetails usd = new userStudentDetails();
+        private void TxtMasterSearch_TextChanged(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            dt = sdal.SearchStudentAttendanceAndDetails(TxtMasterSearch.Text.Trim());
+            usd.lblStudentID.Text = dt.Rows[0][0].ToString();
+
         }
     }
 }
