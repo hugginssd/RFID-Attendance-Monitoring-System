@@ -32,7 +32,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnSearch = new System.Windows.Forms.Button();
-            this.txtSearch = new Windows.Forms.HintTextBox(this.components);
+            this.TxtSearch = new Windows.Forms.HintTextBox(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.BtnReset = new System.Windows.Forms.Button();
             this.BtnUpdate = new System.Windows.Forms.Button();
@@ -86,21 +86,23 @@
             this.BtnSearch.TabIndex = 67;
             this.BtnSearch.Text = "SEARCH";
             this.BtnSearch.UseVisualStyleBackColor = false;
+            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
-            // txtSearch
+            // TxtSearch
             // 
-            this.txtSearch.EnterToTab = false;
-            this.txtSearch.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.Gray;
-            this.txtSearch.HintColor = System.Drawing.Color.Gray;
-            this.txtSearch.HintValue = "Search here....";
-            this.txtSearch.Location = new System.Drawing.Point(288, 191);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(512, 23);
-            this.txtSearch.TabIndex = 66;
-            this.txtSearch.Text = "Search here....";
-            this.txtSearch.TextForeColor = System.Drawing.Color.Black;
-            this.txtSearch.Value = "";
+            this.TxtSearch.EnterToTab = false;
+            this.TxtSearch.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSearch.ForeColor = System.Drawing.Color.Gray;
+            this.TxtSearch.HintColor = System.Drawing.Color.Gray;
+            this.TxtSearch.HintValue = "Search here....";
+            this.TxtSearch.Location = new System.Drawing.Point(288, 191);
+            this.TxtSearch.Name = "TxtSearch";
+            this.TxtSearch.Size = new System.Drawing.Size(512, 23);
+            this.TxtSearch.TabIndex = 66;
+            this.TxtSearch.Text = "Search here....";
+            this.TxtSearch.TextForeColor = System.Drawing.Color.Black;
+            this.TxtSearch.Value = "";
+            this.TxtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
             // 
             // dataGridView1
             // 
@@ -124,6 +126,7 @@
             this.BtnReset.TabIndex = 64;
             this.BtnReset.Text = "RESET";
             this.BtnReset.UseVisualStyleBackColor = false;
+            this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // BtnUpdate
             // 
@@ -138,6 +141,7 @@
             this.BtnUpdate.TabIndex = 63;
             this.BtnUpdate.Text = "UPDATE";
             this.BtnUpdate.UseVisualStyleBackColor = false;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // txtNewPassword
             // 
@@ -235,7 +239,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnSearch);
-            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.TxtSearch);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnReset);
             this.Controls.Add(this.BtnUpdate);
@@ -257,7 +261,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnSearch;
-        private Windows.Forms.HintTextBox txtSearch;
+        private Windows.Forms.HintTextBox TxtSearch;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button BtnReset;
         private System.Windows.Forms.Button BtnUpdate;

@@ -18,8 +18,8 @@ namespace Attendance_Management_System
         {
             InitializeComponent();
         }
-        userBLL userBLL = new userBLL();
-        userDAL userDAL = new userDAL();
+        UserBLL userBLL = new UserBLL();
+        UserDAL userDAL = new UserDAL();
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {

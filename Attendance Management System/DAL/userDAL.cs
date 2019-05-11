@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace Attendance_Management_System.DAL
 {
-    class userDAL
+    class UserDAL
     {
         //public string connection = ConfigurationManager.ConnectionStrings["RFIDConnection"].ConnectionString;
         Connection con = new Connection();
-        public bool Insert(userBLL bll)
+        public bool Insert(UserBLL bll)
         {
             bool IsSuccess = false;
             SqlConnection conn = new SqlConnection(this.con.connection);
@@ -107,7 +107,7 @@ namespace Attendance_Management_System.DAL
             return dt;
 
         }
-        public bool Delete(userBLL bll)
+        public bool Delete(UserBLL bll)
         {
             bool IsSuccess = false;
             SqlConnection conn = new SqlConnection(this.con.connection);
@@ -141,7 +141,7 @@ namespace Attendance_Management_System.DAL
 
             return IsSuccess;
         }
-        public bool Update(userBLL bll)
+        public bool Update(UserBLL bll)
         {
             bool IsSuccess = false;
             SqlConnection conn = new SqlConnection(this.con.connection);
@@ -184,7 +184,7 @@ namespace Attendance_Management_System.DAL
 
             return IsSuccess;
         }
-        public bool Search(userBLL bll)
+        public bool Search(UserBLL bll)
         {
             bool IsSuccess = false;
             SqlConnection conn = new SqlConnection(this.con.connection);

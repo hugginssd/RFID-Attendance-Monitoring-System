@@ -19,11 +19,16 @@ namespace Attendance_Management_System.UI
         {
             InitializeComponent();
         }
-       // StudentBLL sbll = new StudentBLL();
-       // StudentDAL sdal = new StudentDAL();
+        StudentBLL sbll = new StudentBLL();
+        StudentDAL sdal = new StudentDAL();
         private void BtnCreate_Click(object sender, EventArgs e)
         {
-            //sbll.CandidateNo = 
+            sbll.CandidateNo = txtPreviousCandidateNo.Text.ToUpper();
+            sbll.Address = txtAddress1.Text.ToUpper();
+            sbll.Address2 = txtAddress2.Text.ToUpper();
+            sbll.DOB = dtpDOB.Value.Date;
+           
+            
         }
 
         private void BtnReset_Click(object sender, EventArgs e)

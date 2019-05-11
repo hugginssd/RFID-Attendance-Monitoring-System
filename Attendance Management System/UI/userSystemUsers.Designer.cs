@@ -34,7 +34,7 @@
             this.txtConfirmPassword = new Windows.Forms.HintTextBox(this.components);
             this.txtPassword = new Windows.Forms.HintTextBox(this.components);
             this.BtnSearch = new System.Windows.Forms.Button();
-            this.txtSearch = new Windows.Forms.HintTextBox(this.components);
+            this.TxtSearch = new Windows.Forms.HintTextBox(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.BtnReset = new System.Windows.Forms.Button();
             this.BtnCreate = new System.Windows.Forms.Button();
@@ -124,21 +124,23 @@
             this.BtnSearch.TabIndex = 49;
             this.BtnSearch.Text = "SEARCH";
             this.BtnSearch.UseVisualStyleBackColor = false;
+            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
-            // txtSearch
+            // TxtSearch
             // 
-            this.txtSearch.EnterToTab = false;
-            this.txtSearch.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.Gray;
-            this.txtSearch.HintColor = System.Drawing.Color.Gray;
-            this.txtSearch.HintValue = "Search here....";
-            this.txtSearch.Location = new System.Drawing.Point(428, 192);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(372, 23);
-            this.txtSearch.TabIndex = 48;
-            this.txtSearch.Text = "Search here....";
-            this.txtSearch.TextForeColor = System.Drawing.Color.Black;
-            this.txtSearch.Value = "";
+            this.TxtSearch.EnterToTab = false;
+            this.TxtSearch.Font = new System.Drawing.Font("Humanst521 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSearch.ForeColor = System.Drawing.Color.Gray;
+            this.TxtSearch.HintColor = System.Drawing.Color.Gray;
+            this.TxtSearch.HintValue = "Search here....";
+            this.TxtSearch.Location = new System.Drawing.Point(428, 192);
+            this.TxtSearch.Name = "TxtSearch";
+            this.TxtSearch.Size = new System.Drawing.Size(372, 23);
+            this.TxtSearch.TabIndex = 48;
+            this.TxtSearch.Text = "Search here....";
+            this.TxtSearch.TextForeColor = System.Drawing.Color.Black;
+            this.TxtSearch.Value = "";
+            this.TxtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
             // 
             // dataGridView1
             // 
@@ -162,6 +164,7 @@
             this.BtnReset.TabIndex = 46;
             this.BtnReset.Text = "RESET";
             this.BtnReset.UseVisualStyleBackColor = false;
+            this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // BtnCreate
             // 
@@ -176,6 +179,7 @@
             this.BtnCreate.TabIndex = 45;
             this.BtnCreate.Text = "CREATE";
             this.BtnCreate.UseVisualStyleBackColor = false;
+            this.BtnCreate.Click += new System.EventHandler(this.BtnCreate_Click);
             // 
             // txtEmail
             // 
@@ -301,7 +305,7 @@
             this.Controls.Add(this.txtConfirmPassword);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.BtnSearch);
-            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.TxtSearch);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnReset);
             this.Controls.Add(this.BtnCreate);
@@ -325,7 +329,7 @@
         private Windows.Forms.HintTextBox txtConfirmPassword;
         private Windows.Forms.HintTextBox txtPassword;
         private System.Windows.Forms.Button BtnSearch;
-        private Windows.Forms.HintTextBox txtSearch;
+        private Windows.Forms.HintTextBox TxtSearch;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button BtnReset;
         private System.Windows.Forms.Button BtnCreate;

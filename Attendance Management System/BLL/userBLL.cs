@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Attendance_Management_System.BLL
 {
-    class userBLL
+    class UserBLL
     {
         public int ID { get; set; }
         public string Name { get; set; }
