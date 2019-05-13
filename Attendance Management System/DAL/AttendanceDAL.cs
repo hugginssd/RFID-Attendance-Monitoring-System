@@ -12,8 +12,7 @@ namespace Attendance_Management_System.DAL
 {
     class AttendanceDAL
     {
-        //public string connection = ConfigurationManager.ConnectionStrings["RFIDConnection"].ConnectionString;
-       // private string connection = "Data Source=USER-PC\\SQLEXPRESS;Initial Catalog=RFIDAttendance;Integrated Security=True;Pooling=False";
+        
         Connection con = new Connection();
         public DataTable ScanIn(string serial)
         {
@@ -24,17 +23,24 @@ namespace Attendance_Management_System.DAL
                                                 ",[FIRSTNAME]" +
                                                 ",[LASTNAME]" +
                                                 ",[CLASSNAME]" +
+                                                ",[TIMEIN]"+
+                                                ",[TIMEOUT]"+
+                                                ",[DATEATTENDED]"+
+                                                ",DATEDIFF(HOUR,[TIMEIN],[TIMEOUT])) AS[HOURS]"+
                                                 "FROM[dbo].[Student]" +
                                                 "INNER JOIN[dbo].[TagsSerials]" +
                                                 "ON[dbo].[Student].[STUDENTID] = [dbo].[TagsSerials].[STUDENTID]" +
                                                 "INNER JOIN[dbo].[Class]" +
                                                 "ON[dbo].[Student].[CLASSID] = [dbo].[Class].[CLASSID]" +
-                                                "WHERE[dbo].[Student].[STUDENTID] = " + serial;
+                                                "INNER JOIN[dbo].[Attendance]"+
+                                                "ON[dbo].[Student].[STUDENTID] = [dbo].[Attendance].[STUDENTID]"+
+                                                "WHERE[dbo].[TagsSerials].[TAGSERIAL] = " + serial;
 
 
             try
             {
                 SqlCommand cmd = new SqlCommand(sql, con);
+                con.Open();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 dt = new DataTable();
                 da.Fill(dt);

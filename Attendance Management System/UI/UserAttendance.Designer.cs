@@ -35,6 +35,10 @@
             this.BtnCheckedOut = new System.Windows.Forms.Button();
             this.BtnCheckedIn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colStudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colClass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnUnConfirmed = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtUpdatedAt = new Windows.Forms.HintTextBox(this.components);
@@ -51,10 +55,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.colStudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colClass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -172,6 +172,30 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(703, 366);
             this.dataGridView1.TabIndex = 4;
+            // 
+            // colStudentID
+            // 
+            this.colStudentID.HeaderText = "STUDENT ID";
+            this.colStudentID.Name = "colStudentID";
+            this.colStudentID.Width = 150;
+            // 
+            // colFirstName
+            // 
+            this.colFirstName.HeaderText = "FIRSTNAME";
+            this.colFirstName.Name = "colFirstName";
+            this.colFirstName.Width = 200;
+            // 
+            // colLastName
+            // 
+            this.colLastName.HeaderText = "LASTNAME";
+            this.colLastName.Name = "colLastName";
+            this.colLastName.Width = 200;
+            // 
+            // colClass
+            // 
+            this.colClass.HeaderText = "CLASS";
+            this.colClass.Name = "colClass";
+            this.colClass.Width = 150;
             // 
             // BtnUnConfirmed
             // 
@@ -375,30 +399,6 @@
             this.label7.Text = "Check-In Check-Out Monitoring";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // colStudentID
-            // 
-            this.colStudentID.HeaderText = "STUDENT ID";
-            this.colStudentID.Name = "colStudentID";
-            this.colStudentID.Width = 150;
-            // 
-            // colFirstName
-            // 
-            this.colFirstName.HeaderText = "FIRSTNAME";
-            this.colFirstName.Name = "colFirstName";
-            this.colFirstName.Width = 200;
-            // 
-            // colLastName
-            // 
-            this.colLastName.HeaderText = "LASTNAME";
-            this.colLastName.Name = "colLastName";
-            this.colLastName.Width = 200;
-            // 
-            // colClass
-            // 
-            this.colClass.HeaderText = "CLASS";
-            this.colClass.Name = "colClass";
-            this.colClass.Width = 150;
-            // 
             // UserAttendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,6 +406,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "UserAttendance";
             this.Size = new System.Drawing.Size(904, 536);
+            this.Load += new System.EventHandler(this.UserAttendance_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
